@@ -8,14 +8,11 @@ npm i -D nodemon ---->
 nodemon is used - no need to restart server agian agian 
 
 
-Prettier = automatic code cleaner - config 
-..............................................................
+Prettier = automatic code cleaner
+
 🛠️ Development (Dev)
 
 This is the phase where you build and test your app
-
-
-....................................................................
 
 🚀 Production (Prod)
 
