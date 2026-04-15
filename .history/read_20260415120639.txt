@@ -1,0 +1,35 @@
+npm i -D nodemon ----> 
+
+"devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+
+
+nodemon is used - no need to restart server agian agian 
+
+
+Prettier = automatic code cleaner - config 
+..............................................................
+🛠️ Development (Dev)
+
+This is the phase where you build and test your app
+
+
+....................................................................
+
+🚀 Production (Prod)
+
+This is the final version users use
+Your deployed site on Vercel or Netlify
+................................................................
+🔹 What Express does (in simple terms)
+
+It helps you:
+
+Create a server
+Handle HTTP requests (GET, POST, PUT, DELETE)
+Build APIs
+Manage routes (URLs)
+Send responses to users (data, HTML, JSON)
+.........................................................
+we need to npm i 

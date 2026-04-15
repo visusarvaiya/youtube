@@ -1,0 +1,54 @@
+{
+    "sourceFile": "read.txt",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1776234971194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776234990283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,5 +29,7 @@\n Create a server\r\n Handle HTTP requests (GET, POST, PUT, DELETE)\r\n Build APIs\r\n Manage routes (URLs)\r\n-Send responses to users (data, HTML, JSON)\n\\ No newline at end of file\n+Send responses to users (data, HTML, JSON)\r\n+.........................................................\r\n+we \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776234999498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n Build APIs\r\n Manage routes (URLs)\r\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n-we \n\\ No newline at end of file\n+we need to npm i \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235007099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n Build APIs\r\n Manage routes (URLs)\r\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n-we need to npm i \n\\ No newline at end of file\n+we need to npm i dotenv mongooes \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235016775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n Build APIs\r\n Manage routes (URLs)\r\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n-we need to npm i dotenv mongooes \n\\ No newline at end of file\n+we need to npm i dotenv mongooes express befo\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235023265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n Build APIs\r\n Manage routes (URLs)\r\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n-we need to npm i dotenv mongooes express befo\n\\ No newline at end of file\n+we need to npm i dotenv mongooes express before db connection \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235165744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n Build APIs\r\n Manage routes (URLs)\r\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n-we need to npm i dotenv mongooes express before db connection \n\\ No newline at end of file\n+we need to npm i dotenv mongoose express before db connection \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235313615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,4 +32,5 @@\n Manage routes (URLs)\r\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n we need to npm i dotenv mongoose express before db connection \r\n+-\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235327900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,6 @@\n Build APIs\r\n Manage routes (URLs)\r\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n-we need to npm i dotenv mongoose express before db connection \n--\n\\ No newline at end of file\n+we need to npm i dotenv mongoose express before db connection \r\n+-> we need to use asyn and awaut and try - catch \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235335040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,5 @@\n Manage routes (URLs)\r\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n we need to npm i dotenv mongoose express before db connection \r\n--> we need to use asyn and awaut and try - catch \n\\ No newline at end of file\n+-> we need to use asyn await and try - catch \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1776234971194,
+            "name": "Commit-0",
+            "content": "npm i -D nodemon ----> \r\n\r\n\"devDependencies\": {\r\n    \"nodemon\": \"^3.1.14\"\r\n  }\r\n\r\n\r\nnodemon is used - no need to restart server agian agian \r\n\r\n\r\nPrettier = automatic code cleaner - config \r\n..............................................................\r\n🛠️ Development (Dev)\r\n\r\nThis is the phase where you build and test your app\r\n\r\n\r\n....................................................................\r\n\r\n🚀 Production (Prod)\r\n\r\nThis is the final version users use\r\nYour deployed site on Vercel or Netlify\r\n................................................................\r\n🔹 What Express does (in simple terms)\r\n\r\nIt helps you:\r\n\r\nCreate a server\r\nHandle HTTP requests (GET, POST, PUT, DELETE)\r\nBuild APIs\r\nManage routes (URLs)\r\nSend responses to users (data, HTML, JSON)"
+        }
+    ]
+}

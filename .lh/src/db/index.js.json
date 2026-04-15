@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/db/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1776235847209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776235854716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-import mongoose from \"mongoose\";\n\\ No newline at end of file\n+import mongoose from \"mongoose\";\r\n+import db\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235909431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n import mongoose from \"mongoose\";\r\n-import db\n\\ No newline at end of file\n+import { DB_NAME } from \"../constants\";\r\n+\r\n"
+                },
+                {
+                    "date": 1776235920331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n import mongoose from \"mongoose\";\r\n import { DB_NAME } from \"../constants\";\r\n \r\n+const connectdb \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235925675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose from \"mongoose\";\r\n import { DB_NAME } from \"../constants\";\r\n \r\n-const connectdb \n\\ No newline at end of file\n+const connectdb = async\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235952486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose from \"mongoose\";\r\n import { DB_NAME } from \"../constants\";\r\n \r\n-const connectdb = async\n\\ No newline at end of file\n+const connectdb = async \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235958663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose from \"mongoose\";\r\n import { DB_NAME } from \"../constants\";\r\n \r\n-const connectdb = async \n\\ No newline at end of file\n+const connectdb = async()=\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235964926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n import mongoose from \"mongoose\";\r\n import { DB_NAME } from \"../constants\";\r\n \r\n-const connectdb = async()=\n\\ No newline at end of file\n+const connectdb = async()=>{\r\n+    try\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776235971870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n const connectdb = async()=>{\r\n     try{\r\n \r\n     }\r\n-    catch\r\n+    catch{}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776236217401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { DB_NAME } from \"../constants\";\r\n \r\n const connectdb = async() => {\r\n     try{\r\n-        await \r\n+        await\r\n     }\r\n     catch(error){\r\n         console.log(\"mongodb connection error \" + error);\r\n         process.exit(1)\r\n"
+                }
+            ],
+            "date": 1776235847209,
+            "name": "Commit-0",
+            "content": "import mongoose from \"mongoose\";"
+        }
+    ]
+}

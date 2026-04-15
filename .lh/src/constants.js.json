@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/constants.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1776234639102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776234651801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const \n\\ No newline at end of file\n+const DB_NAME = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776234659390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const DB_NAME = \n\\ No newline at end of file\n+export const DB_NAME = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776234666164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-export const DB_NAME = \n\\ No newline at end of file\n+export const DB_NAME =\"youtube\"\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1776234639102,
+            "name": "Commit-0",
+            "content": "const "
+        }
+    ]
+}

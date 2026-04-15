@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1776237136044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776237145039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import da\n\\ No newline at end of file\n+import { DB_NAME } from \"./constants\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776237150745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import { DB_NAME } from \"./constants\";\r\n-impo\n\\ No newline at end of file\n+impor\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776237377124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import connectdb from \"./db\";\r\n import dotenv from \"dotenv\";\r\n \r\n dotenv.config({\r\n-    path:''./env'\r\n+    path:./env'\r\n })\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1776237136044,
+            "name": "Commit-0",
+            "content": "import da"
+        }
+    ]
+}
