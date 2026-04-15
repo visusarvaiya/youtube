@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/utils/ApiErrors.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1776247773392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776247880594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,6 @@\n         }\r\n     }\r\n }\r\n \r\n-export { ApiError };\n\\ No newline at end of file\n+export { ApiError };\r\n+\r\n"
+                },
+                {
+                    "date": 1776247887171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,4 +22,5 @@\n }\r\n \r\n export { ApiError };\r\n \r\n+/*\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776247893215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,13 @@\n }\r\n \r\n export { ApiError };\r\n \r\n-/*\n\\ No newline at end of file\n+/*\r\n+Instead of using:\r\n+\r\n+throw new Error(\"User not found\");\r\n+\r\n+You can do:\r\n+\r\n+throw new ApiError(404, \"User not found\");\r\n+\r\n"
+                },
+                {
+                    "date": 1776247899885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,4 +31,9 @@\n You can do:\r\n \r\n throw new ApiError(404, \"User not found\");\r\n \r\n+🔹 Why we use this\r\n+✅ Add statusCode\r\n+✅ Send structured error response\r\n+✅ Keep error handling clean\r\n+✅ Used with asyncHandler\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776247994788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,5 +35,8 @@\n 🔹 Why we use this\r\n ✅ Add statusCode\r\n ✅ Send structured error response\r\n ✅ Keep error handling clean\r\n-✅ Used with asyncHandler\n\\ No newline at end of file\n+✅ Used with asyncHandler\r\n+\r\n+Route → asyncHandler → throw ApiError → error middleware → response\r\n+*/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248048443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         this.statusCode = statusCode;\r\n         this.data = null;\r\n         this.message = message;\r\n         this.success = false;\r\n-        this.errors = errors;\r\n+        this.errors = errors; // \r\n \r\n         if (stack) {\r\n             this.stack = stack;\r\n         } else {\r\n"
+                },
+                {
+                    "date": 1776248054469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         this.statusCode = statusCode;\r\n         this.data = null;\r\n         this.message = message;\r\n         this.success = false;\r\n-        this.errors = errors; // \r\n+        this.errors = errors; // extra details \r\n \r\n         if (stack) {\r\n             this.stack = stack;\r\n         } else {\r\n"
+                },
+                {
+                    "date": 1776248059675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \r\n         this.statusCode = statusCode;\r\n         this.data = null;\r\n         this.message = message;\r\n-        this.success = false; \r\n+        this.success = false; always f\r\n         this.errors = errors; // extra details \r\n \r\n         if (stack) {\r\n             this.stack = stack;\r\n"
+                }
+            ],
+            "date": 1776247773392,
+            "name": "Commit-0",
+            "content": "class ApiError extends Error {\r\n    constructor(\r\n        statusCode,\r\n        message = \"Something went wrong\",\r\n        errors = [],\r\n        stack = \"\"\r\n    ) {\r\n        super(message);\r\n\r\n        this.statusCode = statusCode;\r\n        this.data = null;\r\n        this.message = message;\r\n        this.success = false;\r\n        this.errors = errors;\r\n\r\n        if (stack) {\r\n            this.stack = stack;\r\n        } else {\r\n            Error.captureStackTrace(this, this.constructor);\r\n        }\r\n    }\r\n}\r\n\r\nexport { ApiError };"
+        }
+    ]
+}

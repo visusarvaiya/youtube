@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 14,
             "patches": [
                 {
                     "date": 1776234971194,
@@ -44,6 +44,26 @@
                 {
                     "date": 1776235335040,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,5 @@\n Manage routes (URLs)\r\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n we need to npm i dotenv mongoose express before db connection \r\n--> we need to use asyn and awaut and try - catch \n\\ No newline at end of file\n+-> we need to use asyn await and try - catch \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776243831150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,5 @@\n Manage routes (URLs)\r\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n we need to npm i dotenv mongoose express before db connection \r\n--> we need to use asyn await and try - catch \n\\ No newline at end of file\n+-> we need to use asyn-await and try - catch \r\n"
+                },
+                {
+                    "date": 1776243952491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,4 +33,6 @@\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n we need to npm i dotenv mongoose express before db connection \r\n -> we need to use asyn-await and try - catch \r\n+ npm i cookie-parser cor\r\n+ s\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776243959106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,6 +33,8 @@\n Send responses to users (data, HTML, JSON)\r\n .........................................................\r\n we need to npm i dotenv mongoose express before db connection \r\n -> we need to use asyn-await and try - catch \r\n- npm i cookie-parser cor\r\n- s\n\\ No newline at end of file\n+ npm i cookie-parser cors\r\n+\r\n+ Cookies are small pieces of data that a browser stores \r\n+ and sends back to the server with every request.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245644551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,5 +36,6 @@\n -> we need to use asyn-await and try - catch \r\n  npm i cookie-parser cors\r\n \r\n  Cookies are small pieces of data that a browser stores \r\n- and sends back to the server with every request.\n\\ No newline at end of file\n+ and sends back to the server with every request.\r\n+ \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245658007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,5 +37,8 @@\n  npm i cookie-parser cors\r\n \r\n  Cookies are small pieces of data that a browser stores \r\n  and sends back to the server with every request.\r\n- \n\\ No newline at end of file\n+...........................................................\r\n+ User submits form → urlencoded handles data\r\n+Website loads images → static serves files\r\n+User login → cookies stored → cookieParser reads them\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1776234971194,

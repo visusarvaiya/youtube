@@ -1,0 +1,262 @@
+{
+    "sourceFile": "src/app.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 61,
+            "patches": [
+                {
+                    "date": 1776242684384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776242695383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import expre\n\\ No newline at end of file\n+import express f\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776242702196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import express f\n\\ No newline at end of file\n+import express from \"express\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776242711674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import express from \"express\"\n\\ No newline at end of file\n+import express from \"express\"\r\n"
+                },
+                {
+                    "date": 1776242739208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n import express from \"express\"\r\n+const app\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776242745530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import express from \"express\"\r\n-const app\n\\ No newline at end of file\n+const app = express()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776242756076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n import express from \"express\"\r\n-const app = express()\n\\ No newline at end of file\n+const app = express()\r\n+export \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776242768708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import express from \"express\"\r\n const app = express()\r\n-export \n\\ No newline at end of file\n+export {app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244030187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n import express from \"express\"\r\n+\r\n const app = express()\r\n\\ No newline at end of file\n-export {app }\n+export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244038172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import express from \"express\"\r\n-\r\n+import cors from \r\n const app = express()\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244046947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n import express from \"express\"\r\n-import cors from \r\n+import cors from \"cors\"\r\n+import cookie\r\n const app = express()\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244052778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import express from \"express\"\r\n import cors from \"cors\"\r\n-import cookie\r\n+import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244250866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import express from \"express\"\r\n import cors from \"cors\"\r\n-import cookieParser from \"cookie-parser\"\r\n+import cookieParser from \"cookie-parser\"use\r\n const app = express()\r\n+app.\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244257498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import express from \"express\"\r\n import cors from \"cors\"\r\n-import cookieParser from \"cookie-parser\"use\r\n+import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n-app.\r\n+app.use\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244269219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import express from \"express\"\r\n import cors from \"cors\"\r\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n-app.use\r\n+app.use(cors)\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244275919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n import express from \"express\"\r\n import cors from \"cors\"\r\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n-app.use(cors)\r\n+app.use(cors({\r\n+    \r\n+}))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244283563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n import cors from \"cors\"\r\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n app.use(cors({\r\n-    \r\n+    origin:\r\n }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244289039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n import cors from \"cors\"\r\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n app.use(cors({\r\n-    origin:\r\n+    origin:process.env\r\n }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244398033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n import cors from \"cors\"\r\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n app.use(cors({\r\n-    origin:process.env\r\n+    origin:process.env. \r\n }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244406793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n import cors from \"cors\"\r\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n app.use(cors({\r\n-    origin:process.env. \r\n+    origin:process.env.CORS_ORIGIN\r\n }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244417674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,8 @@\n import cors from \"cors\"\r\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n app.use(cors({\r\n-    origin:process.env.CORS_ORIGIN\r\n+    origin:process.env.CORS_ORIGIN,\r\n+    credentials:true\r\n }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244457079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n import cors from \"cors\"\r\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n app.use(cors({\r\n-    origin:process.env.CORS_ORIGIN,\r\n+    origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n     credentials:true\r\n }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244494150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,11 @@\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n app.use(cors({\r\n     origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n-    credentials:true\r\n+    credentials:true Cookies\r\n+Authorization headers\r\n+Sessions\r\n+\r\n+to be sent from frontend → backend\r\n }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244501536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,7 @@\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n app.use(cors({\r\n     origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n-    credentials:true Cookies\r\n-Authorization headers\r\n-Sessions\r\n-\r\n-to be sent from frontend → backend\r\n+    credentials:true it allows\r\n }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244508173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n app.use(cors({\r\n     origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n-    credentials:true it allows\r\n+    credentials:true //\r\n }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244514878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n import cookieParser from \"cookie-parser\"\r\n const app = express()\r\n app.use(cors({\r\n     origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n-    credentials:true //\r\n+    credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244628133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import express from \"express\"\r\n import cors from \"cors\"\r\n-import cookieParser from \"cookie-parser\"\r\n+import cookieParser from \"cookie-parser\"//In Express.js, the cookie-parser middleware is used to read (parse) cookies sent by the client (browser) in HTTP requests.\r\n const app = express()\r\n app.use(cors({\r\n     origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n"
+                },
+                {
+                    "date": 1776244793406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,7 @@\n app.use(cors({\r\n     origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n+\r\n+app.use(express.json)\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244801508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n \r\n-app.use(express.json)\r\n+app.use(express.json({limit}))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244807426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n \r\n-app.use(express.json({limit}))\r\n+app.use(express.json({limit : }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244819749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n \r\n-app.use(express.json({limit : }))\r\n+app.use(express.json({limit : 16kb }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776244827524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n \r\n-app.use(express.json({limit : 16kb }))\r\n+app.use(express.json({limit : \"16kb\" }))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245067522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     origin:process.env.CORS_ORIGIN,//“Only allow requests from this frontend URL\r\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n \r\n-app.use(express.json({limit : \"16kb\" }))\r\n+app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245100643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,6 @@\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n+app.use\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245109376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n-app.use\r\n+app.use(express.url)\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245118631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n-app.use(express.url)\r\n+app.use(express.urlencoded({exten}))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245127929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,6 @@\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n-app.use(express.urlencoded({exten}))\r\n+app.use(express.urlencoded({extended:true,limit:\"\"}))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245139675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,7 @@\n     credentials:true //This is VERY IMPORTANT when using cookies or authentication\r\n }))\r\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n-app.use(express.urlencoded({extended:true,limit:\"\"}))\r\n+app.use(express.urlencoded({extended:true,limit:\"16kb\"}))\r\n+\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245147394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n }))\r\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n app.use(express.urlencoded({extended:true,limit:\"16kb\"}))\r\n-\r\n+app.use()\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245154450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n }))\r\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n app.use(express.urlencoded({extended:true,limit:\"16kb\"}))\r\n-app.use()\r\n+app.use(express.static)\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245162378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n }))\r\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n app.use(express.urlencoded({extended:true,limit:\"16kb\"}))\r\n-app.use(express.static)\r\n+app.use(express.static(\"public\"))\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245170330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,6 @@\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n app.use(express.urlencoded({extended:true,limit:\"16kb\"}))\r\n app.use(express.static(\"public\"))\r\n+app\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245178992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n app.use(express.urlencoded({extended:true,limit:\"16kb\"}))\r\n app.use(express.static(\"public\"))\r\n-app\r\n+app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245357262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,11 @@\n }))\r\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n app.use(express.urlencoded({extended:true,limit:\"16kb\"}))\r\n+\r\n+//<form method=\"POST\">\r\n+  <input name=\"username\" />\r\n+</form>\r\n app.use(express.static(\"public\"))\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245364918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n app.use(express.urlencoded({extended:true,limit:\"16kb\"}))\r\n \r\n-//<form method=\"POST\">\r\n+/<form method=\"POST\">\r\n   <input name=\"username\" />\r\n </form>\r\n app.use(express.static(\"public\"))\r\n app.use(cookieParser())\r\n"
+                },
+                {
+                    "date": 1776245371379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n \r\n app.use(express.json({limit : \"16kb\" }))//“Accept JSON data from client, but only up to 16KB size”\r\n app.use(express.urlencoded({extended:true,limit:\"16kb\"}))\r\n \r\n-/<form method=\"POST\">\r\n+/*<form method=\"POST\">\r\n   <input name=\"username\" />\r\n-</form>\r\n+</form>*/\r\n app.use(express.static(\"public\"))\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245383951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n app.use(express.urlencoded({extended:true,limit:\"16kb\"}))\r\n \r\n /*<form method=\"POST\">\r\n   <input name=\"username\" />\r\n-</form>*/\r\n+</form> to */\r\n app.use(express.static(\"public\"))\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245390671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,8 @@\n \r\n /*<form method=\"POST\">\r\n   <input name=\"username\" />\r\n </form> to */\r\n+/*\r\n app.use(express.static(\"public\"))\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245397608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,8 @@\n \r\n /*<form method=\"POST\">\r\n   <input name=\"username\" />\r\n </form> to */\r\n-/*\r\n+/* this \r\n app.use(express.static(\"public\"))\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245404042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,10 @@\n \r\n /*<form method=\"POST\">\r\n   <input name=\"username\" />\r\n </form> to */\r\n-/* this \r\n+/* this req.body = {\r\n+  username: \"visu\"\r\n+}\r\n app.use(express.static(\"public\"))\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245423722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,10 @@\n   <input name=\"username\" />\r\n </form> to */\r\n /* this req.body = {\r\n   username: \"visu\"\r\n-}\r\n+}  \r\n+  ✅ extended: true\r\n+Allows complex data (objects, arrays)\r\n app.use(express.static(\"public\"))\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245433911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,15 @@\n   username: \"visu\"\r\n }  \r\n   ✅ extended: true\r\n Allows complex data (objects, arrays)\r\n+\r\n+user[name]=visu&user[age]=20\r\n+\r\n+Becomes:\r\n+\r\n+req.body = {\r\n+  user: { name: \"visu\", age: 20 }\r\n+}\r\n app.use(express.static(\"public\"))\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245449482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   <input name=\"username\" />\r\n </form> to */\r\n /* this req.body = {\r\n   username: \"visu\"\r\n-}  \r\n+}  ................\r\n   ✅ extended: true\r\n Allows complex data (objects, arrays)\r\n \r\n user[name]=visu&user[age]=20\r\n@@ -24,8 +24,9 @@\n Becomes:\r\n \r\n req.body = {\r\n   user: { name: \"visu\", age: 20 }\r\n-}\r\n+}*/\r\n+\r\n app.use(express.static(\"public\"))\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245494990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,7 @@\n   user: { name: \"visu\", age: 20 }\r\n }*/\r\n \r\n app.use(express.static(\"public\"))\r\n+\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245501776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,7 +27,9 @@\n   user: { name: \"visu\", age: 20 }\r\n }*/\r\n \r\n app.use(express.static(\"public\"))\r\n+/*👉 Serves static files (no backend logic needed)\r\n \r\n+Files inside public/ folder:\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245510448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,7 +29,7 @@\n \r\n app.use(express.static(\"public\"))\r\n /*👉 Serves static files (no backend logic needed)\r\n \r\n-Files inside public/ folder:\r\n+Files inside public/ folder:image css js*?\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245516744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,7 +29,7 @@\n \r\n app.use(express.static(\"public\"))\r\n /*👉 Serves static files (no backend logic needed)\r\n \r\n-Files inside public/ folder:image css js*?\r\n+Files inside public/ folder:image css js*\r\n app.use(cookieParser())\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245547566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,7 +29,9 @@\n \r\n app.use(express.static(\"public\"))\r\n /*👉 Serves static files (no backend logic needed)\r\n \r\n-Files inside public/ folder:image css js*\r\n+Files inside public/ folder:image css js*/\r\n+\r\n app.use(cookieParser())\r\n+\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245553143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,6 @@\n \r\n Files inside public/ folder:image css js*/\r\n \r\n app.use(cookieParser())\r\n-\r\n+/*Reads cookies from browser request\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245563182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,7 @@\n Files inside public/ folder:image css js*/\r\n \r\n app.use(cookieParser())\r\n /*Reads cookies from browser request\r\n+ you cant easily read cookies \r\n+ \r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245572518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,6 +34,15 @@\n \r\n app.use(cookieParser())\r\n /*Reads cookies from browser request\r\n  you cant easily read cookies \r\n- \r\n+ Browser sends:\r\n+\r\n+Cookie: user=visu; token=123\r\n+\r\n+Backend gets:\r\n+\r\n+req.cookies = {\r\n+  user: \"visu\",\r\n+  token: \"123\"\r\n+}\r\n export { app }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776245577720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,6 +43,6 @@\n \r\n req.cookies = {\r\n   user: \"visu\",\r\n   token: \"123\"\r\n-}\r\n+}*/\r\n export { app }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1776242684384,
+            "name": "Commit-0",
+            "content": "import expre"
+        }
+    ]
+}

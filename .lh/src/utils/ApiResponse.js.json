@@ -1,0 +1,66 @@
+{
+    "sourceFile": "src/utils/ApiResponse.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1776248481627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776248489074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const \n\\ No newline at end of file\n+const ApiResponse\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248494811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const ApiResponse\n\\ No newline at end of file\n+const ApiResponse {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248501561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,4 @@\n-const ApiResponse {}\n\\ No newline at end of file\n+const ApiResponse {\r\n+    {\r\n+\r\n+}}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248512649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n const ApiResponse {\r\n-    {\r\n+    constructor{\r\n \r\n\\ No newline at end of file\n-}}\n+}\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248521738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n const ApiResponse {\r\n-    constructor{\r\n+    constructor(data, messa{\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248528073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n const ApiResponse {\r\n-    constructor(data, messa{\r\n+    constructor(data, message , satus{\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248533939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n const ApiResponse {\r\n-    constructor(data, message , satus{\r\n+    constructor(data, message , satu{\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248541893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n const ApiResponse {\r\n-    constructor(data, message , satu{\r\n+    constructor(data, message , status{\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248549281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n const ApiResponse {\r\n-    constructor(data, message , status{\r\n+    constructor(data, message , statusode{\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248562191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n const ApiResponse {\r\n-    constructor(data, message , statusode{\r\n+    constructor(data, message=\"\", statusCode{\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248570907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n const ApiResponse {\r\n-    constructor(data, message=\"Success\", statusCode{\r\n+    constructor(data, message=\"Success\", statusCode){\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776248859491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n const ApiResponse {\r\n     constructor(data, message=\"Success\", statusCode){\r\n              this.data = data,\r\n-             this.satuscode = statusCode\r\n+             this. = statusCode\r\n }\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1776248481627,
+            "name": "Commit-0",
+            "content": "const "
+        }
+    ]
+}
