@@ -1,0 +1,25 @@
+import mongoose,{Schema} from "mongoose";
+const userSchema = new Schema(
+{
+    username:{
+        type:String,
+        required:true, 
+        unique:true,
+        lowercase:true,
+        trim:true,
+        index:true // optimiszed searching
+
+    },
+     username:{
+        type:String,
+        required:true, 
+        unique:true,
+        lowercase:true,
+        trim:true,
+        index:true // optimiszed searching
+
+    }  
+      
+           
+},Timestamp)
+export const User = mongoose.model("User",userSchema)  

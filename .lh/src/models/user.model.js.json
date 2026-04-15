@@ -1,0 +1,238 @@
+{
+    "sourceFile": "src/models/user.model.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 55,
+            "patches": [
+                {
+                    "date": 1776250201826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776250207813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import \n\\ No newline at end of file\n+import mongoose, from \"mongoose\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250213515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import mongoose, from \"mongoose\";\n\\ No newline at end of file\n+import mongoose,{Schema} from \"mongoose\";\r\n"
+                },
+                {
+                    "date": 1776250223165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n+const userSchema\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250230010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const userSchema\n\\ No newline at end of file\n+const userSchema = new sc\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250238694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const userSchema = new sc\n\\ No newline at end of file\n+const userSchema = new Schema({})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250244739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const userSchema = new Schema({})\n\\ No newline at end of file\n+const userSchema = new Schema({},t)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250252725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const userSchema = new Schema({},t)\n\\ No newline at end of file\n+const userSchema = new Schema({},Timestamp:true)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250259169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const userSchema = new Schema({},Timestamp:true)\n\\ No newline at end of file\n+const userSchema = new Schema({},Timestamp)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250268111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const userSchema = new Schema({},Timestamp)\n\\ No newline at end of file\n+const userSchema = new Schema({},Timestamp)\r\n+export \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250278598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema({},Timestamp)\r\n-export \n\\ No newline at end of file\n+export User = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250295392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema({},Timestamp)\r\n-export User = \n\\ No newline at end of file\n+export const  User = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250302428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema({},Timestamp)\r\n-export const  User = \n\\ No newline at end of file\n+export const User = mongoose\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250308686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema({},Timestamp)\r\n-export const User = mongoose\n\\ No newline at end of file\n+export const User = mongoose.model\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250314069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema({},Timestamp)\r\n-export const User = mongoose.model\n\\ No newline at end of file\n+export const User = mongoose.model(\"User\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250319894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema({},Timestamp)\r\n-export const User = mongoose.model(\"User\")\n\\ No newline at end of file\n+export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250325654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const userSchema = new Schema({},Timestamp)\r\n+const userSchema = new Schema({\r\n+    \r\n+},Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250415761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+import mongoose,{Schema} from \"mongoose\";\r\n+const userSchema = new Schema\r\n+({\r\n+\r\n+},Timestamp)\r\n+export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250421396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,6 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema\r\n-({\r\n+ ({\r\n \r\n },Timestamp)\r\n-export const User = mongoose.model(\"User\",userSchema)\n-import mongoose,{Schema} from \"mongoose\";\r\n-const userSchema = new Schema({\r\n-    \r\n-},Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250429490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const userSchema = new Schema\r\n- ({\r\n+const userSchema = new Schema()\r\n+ \r\n+    {\r\n \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250436577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const userSchema = new Schema()\r\n+const userSchema = new Schema(\r\n  \r\n     {\r\n+        \r\n \r\n+\r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250477652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema(\r\n- \r\n-    {\r\n-        \r\n+         \r\n \r\n \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250482777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema(\r\n          \r\n-\r\n-\r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250490082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema(\r\n-         \r\n+{        \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250495457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema(\r\n-{        \r\n+{\r\n+    username        \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250500797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema(\r\n {\r\n-    username        \r\n+    username:{\r\n+        type\r\n+    }        \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250508683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema(\r\n {\r\n     username:{\r\n-        type\r\n+        type:String\r\n     }        \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250517104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const userSchema = new Schema(\r\n {\r\n     username:{\r\n-        type:String\r\n+        type:String,\r\n+        required\r\n     }        \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250524974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n const userSchema = new Schema(\r\n {\r\n     username:{\r\n         type:String,\r\n-        required\r\n+        required:,\r\n+        unique\r\n     }        \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250530792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n {\r\n     username:{\r\n         type:String,\r\n         required:,\r\n-        unique\r\n+        unique:,\r\n+        lowercase\r\n     }        \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250537800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     username:{\r\n         type:String,\r\n         required:,\r\n         unique:,\r\n-        lowercase\r\n+        lowercase:,\r\n+        trim:\r\n     }        \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250545321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n         type:String,\r\n         required:,\r\n         unique:,\r\n         lowercase:,\r\n-        trim:\r\n+        trim:,\r\n+        index:true\r\n     }        \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250550903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n const userSchema = new Schema(\r\n {\r\n     username:{\r\n         type:String,\r\n-        required:,\r\n+        required:true,\r\n         unique:,\r\n         lowercase:,\r\n         trim:,\r\n         index:true\r\n"
+                },
+                {
+                    "date": 1776250557165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n {\r\n     username:{\r\n         type:String,\r\n         required:true,\r\n-        unique:,\r\n-        lowercase:,\r\n+        unique:true,\r\n+        lowercase:true,\r\n         trim:,\r\n         index:true\r\n     }        \r\n },Timestamp)\r\n"
+                },
+                {
+                    "date": 1776250565487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,12 @@\n const userSchema = new Schema(\r\n {\r\n     username:{\r\n         type:String,\r\n-        required:true,\r\n+        required:true, \r\n         unique:true,\r\n         lowercase:true,\r\n-        trim:,\r\n+        trim:true,\r\n         index:true\r\n     }        \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250584842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,8 @@\n         unique:true,\r\n         lowercase:true,\r\n         trim:true,\r\n         index:true\r\n-    }        \r\n+    }  \r\n+           \r\n\\ No newline at end of file\n },Timestamp)\r\n-export const User = mongoose.model(\"User\",userSchema)\n+export const User = mongoose.model(\"User\",userSchema) \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250603044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         required:true, \r\n         unique:true,\r\n         lowercase:true,\r\n         trim:true,\r\n-        index:true\r\n+        index:true // optimiszed searching\r\n     }  \r\n            \r\n },Timestamp)\r\n\\ No newline at end of file\n-export const User = mongoose.model(\"User\",userSchema) \n+export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250608315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n         unique:true,\r\n         lowercase:true,\r\n         trim:true,\r\n         index:true // optimiszed searching\r\n+        \r\n     }  \r\n            \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250615033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import mongoose,{Schema} from \"mongoose\";\r\n+const userSchema = new Schema(\r\n+{\r\n+    username:{\r\n+        type:String,\r\n+        required:true, \r\n+        unique:true,\r\n+        lowercase:true,\r\n+        trim:true,\r\n+        index:true // optimiszed searching\r\n+\r\n+    }  \r\n+    \r\n+           \r\n+},Timestamp)\r\n+export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250623286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,23 +9,8 @@\n         trim:true,\r\n         index:true // optimiszed searching\r\n \r\n     }  \r\n-    \r\n+     \r\n            \r\n },Timestamp)\r\n-export const User = mongoose.model(\"User\",userSchema)  \n-import mongoose,{Schema} from \"mongoose\";\r\n-const userSchema = new Schema(\r\n-{\r\n-    username:{\r\n-        type:String,\r\n-        required:true, \r\n-        unique:true,\r\n-        lowercase:true,\r\n-        trim:true,\r\n-        index:true // optimiszed searching\r\n-        \r\n-    }  \r\n-           \r\n-},Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250636180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         lowercase:true,\r\n         trim:true,\r\n         index:true // optimiszed searching\r\n \r\n-    }  \r\n-     \r\n+    }\r\n+      \r\n            \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250645389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,18 @@\n         lowercase:true,\r\n         trim:true,\r\n         index:true // optimiszed searching\r\n \r\n-    }\r\n+    },\r\n+    email:{\r\n+        type:String,\r\n+        required:true, \r\n+        unique:true,\r\n+        lowercase:true,\r\n+        trim:true,\r\n+        index:true // optimiszed searching\r\n+\r\n+    }  \r\n       \r\n            \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250659200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         required:true, \r\n         unique:true,\r\n         lowercase:true,\r\n         trim:true,\r\n-        index:true // optimiszed searching\r\n+      \r\n \r\n     }  \r\n       \r\n            \r\n"
+                },
+                {
+                    "date": 1776250668813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,9 @@\n         unique:true,\r\n         lowercase:true,\r\n         trim:true,\r\n       \r\n-\r\n-    }  \r\n+    },  \r\n       \r\n            \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250676396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,18 @@\n         unique:true,\r\n         lowercase:true,\r\n         trim:true,\r\n       \r\n-    },  \r\n+    },\r\n+     name:{\r\n+        type:String,\r\n+        required:true, \r\n+        unique:true,\r\n+        lowercase:true,\r\n+        trim:true,\r\n+        index:true // optimiszed searching\r\n+\r\n+    }    \r\n       \r\n            \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250685168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,12 @@\n         lowercase:true,\r\n         trim:true,\r\n       \r\n     },\r\n-     name:{\r\n+     fullname:{\r\n         type:String,\r\n         required:true, \r\n-        unique:true,\r\n+     \r\n         lowercase:true,\r\n         trim:true,\r\n         index:true // optimiszed searching\r\n \r\n"
+                },
+                {
+                    "date": 1776250695466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,11 +21,10 @@\n      fullname:{\r\n         type:String,\r\n         required:true, \r\n      \r\n-        lowercase:true,\r\n-        trim:true,\r\n-        index:true // optimiszed searching\r\n+    \r\n+       \r\n \r\n     }    \r\n       \r\n            \r\n"
+                },
+                {
+                    "date": 1776250701102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,10 @@\n     },\r\n      fullname:{\r\n         type:String,\r\n         required:true, \r\n-     \r\n-    \r\n-       \r\n+         trim:true,\r\n+        index:true // optimiszed searching\r\n \r\n     }    \r\n       \r\n            \r\n"
+                },
+                {
+                    "date": 1776250707987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,12 +20,13 @@\n     },\r\n      fullname:{\r\n         type:String,\r\n         required:true, \r\n-         trim:true,\r\n+        trim:true,\r\n         index:true // optimiszed searching\r\n \r\n-    }    \r\n+    },\r\n+     \r\n       \r\n            \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250726681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         trim:true,\r\n         index:true // optimiszed searching\r\n \r\n     },\r\n-     \r\n+    avatar\r\n       \r\n            \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250734157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,11 @@\n         trim:true,\r\n         index:true // optimiszed searching\r\n \r\n     },\r\n-    avatar\r\n+    avatar:{\r\n+        type:string\r\n+    }\r\n       \r\n            \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250743199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n         index:true // optimiszed searching\r\n \r\n     },\r\n     avatar:{\r\n-        type:string\r\n+        type:String,\r\n+        required\r\n     }\r\n       \r\n            \r\n },Timestamp)\r\n"
+                },
+                {
+                    "date": 1776250749030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \r\n     },\r\n     avatar:{\r\n         type:String,\r\n-        required\r\n+        required:true \r\n     }\r\n       \r\n            \r\n },Timestamp)\r\n"
+                },
+                {
+                    "date": 1776250770618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,10 @@\n     },\r\n     avatar:{\r\n         type:String,\r\n         required:true \r\n-    }\r\n+    },\r\n+    \r\n       \r\n            \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250776689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     avatar:{\r\n         type:String,\r\n         required:true \r\n     },\r\n-    coverImage\r\n+    coverImage:\r\n       \r\n            \r\n },Timestamp)\r\n export const User = mongoose.model(\"User\",userSchema)  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776250808895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         index:true // optimiszed searching\r\n \r\n     },\r\n     avatar:{\r\n-        type:String,//\r\n+        type:String,// \r\n         required:true \r\n     },\r\n     coverImage:{\r\n         type:String\r\n"
+                }
+            ],
+            "date": 1776250201826,
+            "name": "Commit-0",
+            "content": "import "
+        }
+    ]
+}
