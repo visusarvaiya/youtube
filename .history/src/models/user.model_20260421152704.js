@@ -79,15 +79,14 @@ userSchema.methods.generateAccessToken = function(){//👉 This function creates
 // which is used to authenticate requests.
     //create token
     return jwt.sign(
-        {//Payload (Data inside token)
+        {
         _id:this._id,
         email:this.email,
        username:this.username,
        fullname:this.fullname
 },
-//sct key
    process.env.ACCESS_TOKEN_SECERT,
-   {// options
+   {
     expiresIn:process.env.ACCESS_TOKEN_EXPIRY
    }
     )

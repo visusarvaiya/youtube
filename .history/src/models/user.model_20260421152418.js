@@ -75,19 +75,17 @@ isPasswordCorrect	Compare login password
 bcrypt.compare()	Validate user
 */
 
-userSchema.methods.generateAccessToken = function(){//👉 This function creates a signed access token containing user info, 
-// which is used to authenticate requests.
+userSchema.methods.generateAccessToken = function(){
     //create token
     return jwt.sign(
-        {//Payload (Data inside token)
+        {
         _id:this._id,
         email:this.email,
        username:this.username,
        fullname:this.fullname
 },
-//sct key
    process.env.ACCESS_TOKEN_SECERT,
-   {// options
+   {
     expiresIn:process.env.ACCESS_TOKEN_EXPIRY
    }
     )

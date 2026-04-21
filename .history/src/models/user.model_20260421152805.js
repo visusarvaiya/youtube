@@ -87,7 +87,7 @@ userSchema.methods.generateAccessToken = function(){//👉 This function creates
 },
 //sct key
    process.env.ACCESS_TOKEN_SECERT,
-   {// options
+   {// option
     expiresIn:process.env.ACCESS_TOKEN_EXPIRY
    }
     )
