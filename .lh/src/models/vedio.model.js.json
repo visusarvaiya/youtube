@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/models/vedio.model.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1776753503014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776753521190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-import mongoose,{Schema} from \"mongoose\";\n\\ No newline at end of file\n+import mongoose,{Schema} from \"mongoose\";\r\n+const \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776753531458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const ve\n\\ No newline at end of file\n+const vedio\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776753561478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n const vedioSchema = new Schema(\r\n     {\r\n \r\n     },{\r\n-        timestamps\r\n+        timestamps:\r\n     }\r\n )\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1776753503014,
+            "name": "Commit-0",
+            "content": "import mongoose,{Schema} from \"mongoose\";"
+        }
+    ]
+}
