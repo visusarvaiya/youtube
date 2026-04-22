@@ -1,0 +1,142 @@
+{
+    "sourceFile": "src/utils/cloudinary.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 31,
+            "patches": [
+                {
+                    "date": 1776790573973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776790580586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import \n\\ No newline at end of file\n+import {v2 as cloudinary}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790586075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import {v2 as cloudinary}\n\\ No newline at end of file\n+import {v2 as cloudinary} \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790592368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import {v2 as cloudinary} \n\\ No newline at end of file\n+import {v2 as cloudinary} from \"clo\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790615072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-import {v2 as cloudinary} from \"clo\"\n\\ No newline at end of file\n+import {v2 as cloudinary} from \"cloudinary\"\r\n+import fs from \"\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790835172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n import {v2 as cloudinary} from \"cloudinary\"\r\n-import fs from \"\"\n\\ No newline at end of file\n+import fs from \"fs\r\n+\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790840342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n import {v2 as cloudinary} from \"cloudinary\"\r\n-import fs from \"fs\r\n-\"\n\\ No newline at end of file\n+import fs from \"fs\"\r\n+\r\n+clou\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790848355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n import {v2 as cloudinary} from \"cloudinary\"\r\n import fs from \"fs\"\r\n \r\n-clou\n\\ No newline at end of file\n+cloudinary.config({\r\n+    \r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790854460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import {v2 as cloudinary} from \"cloudinary\"\r\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n-    \r\n+    cloud_name:\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790862852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import {v2 as cloudinary} from \"cloudinary\"\r\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n-    cloud_name:\r\n+    cloud_name:'',\r\n+    \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790867977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n     cloud_name:'',\r\n-    \r\n+    api_key:',\r\n+    '\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790873363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n     cloud_name:'',\r\n-    api_key:',\r\n-    '\r\n+    api_key:'',\r\n+    \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790879567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n \r\n cloudinary.config({\r\n     cloud_name:'',\r\n     api_key:'',\r\n-    \r\n+    api_secret:\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790887706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n \r\n cloudinary.config({\r\n     cloud_name:'',\r\n     api_key:'',\r\n-    api_secret:\r\n-})\n\\ No newline at end of file\n+    api_secret:''\r\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776790977447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import {v2 as cloudinary} from \"cloudinary\"\r\n+import fs from \"fs\"\r\n+\r\n+cloudinary.config({\r\n+    cloud_name:' dw1qdqwru',\r\n+    api_key:'',\r\n+    api_secret:''\r\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791055294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,9 @@\n import {v2 as cloudinary} from \"cloudinary\"\r\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n-    cloud_name:' dw1qdqwru',\r\n-    api_key:'',\r\n+    cloud_name:'dw1qdqwru',\r\n+    api_key:'\t\r\n+266443849385348',\r\n     api_secret:''\r\n-});\n-import {v2 as cloudinary} from \"cloudinary\"\r\n-import fs from \"fs\"\r\n-\r\n-cloudinary.config({\r\n-    cloud_name:'',\r\n-    api_key:'',\r\n-    api_secret:''\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791063306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,6 @@\n \r\n cloudinary.config({\r\n     cloud_name:'dw1qdqwru',\r\n     api_key:'\t\r\n-266443849385348',\r\n     api_secret:''\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791068801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n     cloud_name:'dw1qdqwru',\r\n-    api_key:'\t\r\n+    api_key:\t\r\n     api_secret:''\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791080811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n     cloud_name:'dw1qdqwru',\r\n-    api_key:\t\r\n+    api_key:\"\"\t\r\n     api_secret:''\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791092568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,8 @@\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n     cloud_name:'dw1qdqwru',\r\n-    api_key:\"\"\t\r\n+    api_key:\"\t\r\n+266443849385348\"\t,\r\n     api_secret:''\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791097755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,7 @@\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n     cloud_name:'dw1qdqwru',\r\n-    api_key:\"\t\r\n-266443849385348\"\t,\r\n+    api_key:\t,\r\n     api_secret:''\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791133176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n     cloud_name:'dw1qdqwru',\r\n-    api_key:\t,\r\n+    api_key:''\t,\r\n     api_secret:''\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791294410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,10 @@\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n     cloud_name:'dw1qdqwru',\r\n-    api_key:''\t,\r\n-    api_secret:''\r\n+    api_key:'\t\r\n+266443849385348\r\n+\r\n+'\t,\r\n+    api_secret:'BdZ4WxsRYyoUOVCMgbgKf6XR26g'\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791302679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n cloudinary.config({\r\n     cloud_name:'dw1qdqwru',\r\n     api_key:'\t\r\n-266443849385348\r\n \r\n+\r\n '\t,\r\n     api_secret:'BdZ4WxsRYyoUOVCMgbgKf6XR26g'\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791309887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,6 @@\n \r\n cloudinary.config({\r\n     cloud_name:'dw1qdqwru',\r\n     api_key:'\t\r\n-\r\n-\r\n-'\t,\r\n     api_secret:'BdZ4WxsRYyoUOVCMgbgKf6XR26g'\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791330598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n     cloud_name:'dw1qdqwru',\r\n-    api_key:'\t\r\n+    api_key:'266443849385348',\r\n     api_secret:'BdZ4WxsRYyoUOVCMgbgKf6XR26g'\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791834118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import {v2 as cloudinary} from \"cloudinary\"\r\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n-    cloud_name:'dw1qdqwru',\r\n+    cloud_name:,\r\n     api_key:'266443849385348',\r\n     api_secret:'BdZ4WxsRYyoUOVCMgbgKf6XR26g'\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791849797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import {v2 as cloudinary} from \"cloudinary\"\r\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n-    cloud_name:,\r\n+    cloud_name:process.env.,\r\n     api_key:'266443849385348',\r\n     api_secret:'BdZ4WxsRYyoUOVCMgbgKf6XR26g'\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791856020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import {v2 as cloudinary} from \"cloudinary\"\r\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n-    cloud_name:process.env.,\r\n+    cloud_name:process.env.CLOUDINARY_CLOUD_NAME,\r\n     api_key:'266443849385348',\r\n     api_secret:'BdZ4WxsRYyoUOVCMgbgKf6XR26g'\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791861676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import {v2 as cloudinary} from \"cloudinary\"\r\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n-    cloud_name:process.env.CLOUDINARY_CLOUD_NAME,\r\n+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,\r\n     api_key:'266443849385348',\r\n     api_secret:'BdZ4WxsRYyoUOVCMgbgKf6XR26g'\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776791869233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n import fs from \"fs\"\r\n \r\n cloudinary.config({\r\n     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,\r\n-    api_key: process,\r\n+    api_key: process.,\r\n     api_secret:'BdZ4WxsRYyoUOVCMgbgKf6XR26g'\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776793645745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,11 @@\n \r\n const uploadoncloudinary = asyn (localfilepath) => {\r\n     try{\r\n \r\n-    }catch(error)\r\n+    }catch(error){\r\n+        \r\n+    }\r\n \r\n }\r\n //Multer = “Gatekeeper” (takes file from user)\r\n //Cloudinary = “Warehouse” (stores file safely in cloud)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1776790573973,
+            "name": "Commit-0",
+            "content": "import "
+        }
+    ]
+}

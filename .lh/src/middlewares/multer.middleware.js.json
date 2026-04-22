@@ -1,0 +1,62 @@
+{
+    "sourceFile": "src/middlewares/multer.middleware.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1776794506500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776794570725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-import multer from \"multer\";\n\\ No newline at end of file\n+import multer from \"multer\";\r\n+//Multer = “Gatekeeper” (takes file from user)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776794576531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import multer from \"multer\";\r\n-//Multer = “Gatekeeper” (takes file from user)\n\\ No newline at end of file\n+//Multer = “Gatekeeper” (takes file from user) frontent\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776794581885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import multer from \"multer\";\r\n-//Multer = “Gatekeeper” (takes file from user) frontent\n\\ No newline at end of file\n+//Multer = “Gatekeeper” (takes file from user) frontend \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776794881245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,14 @@\n import multer from \"multer\";\r\n-//Multer = “Gatekeeper” (takes file from user) frontend \n\\ No newline at end of file\n+//Multer = “Gatekeeper” (takes file from user) frontend \r\n+\r\n+const storage = multer.diskStorage({\r\n+  destination: function (req, file, cb) {\r\n+    cb(null, '/tmp/my-uploads')\r\n+  },\r\n+  filename: function (req, file, cb) {\r\n+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)\r\n+    cb(null, file.fieldname + '-' + uniqueSuffix)\r\n+  }\r\n+})\r\n+\r\n+const upload = multer({ storage: storage })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776794891738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n //Multer = “Gatekeeper” (takes file from user) frontend \r\n \r\n const storage = multer.diskStorage({\r\n   destination: function (req, file, cb) {\r\n-    cb(null, '/tmp/my-uploads')\r\n+    cb(null, './tmp/my-uploads')\r\n   },\r\n   filename: function (req, file, cb) {\r\n     const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)\r\n     cb(null, file.fieldname + '-' + uniqueSuffix)\r\n"
+                },
+                {
+                    "date": 1776794900016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n //Multer = “Gatekeeper” (takes file from user) frontend \r\n \r\n const storage = multer.diskStorage({\r\n   destination: function (req, file, cb) {\r\n-    cb(null, './tmp/my-uploads')\r\n+    cb(null, './public')\r\n   },\r\n   filename: function (req, file, cb) {\r\n     const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)\r\n     cb(null, file.fieldname + '-' + uniqueSuffix)\r\n"
+                },
+                {
+                    "date": 1776794906097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n //Multer = “Gatekeeper” (takes file from user) frontend \r\n \r\n const storage = multer.diskStorage({\r\n   destination: function (req, file, cb) {\r\n-    cb(null, './public')\r\n+    cb(null, './public/temp')\r\n   },\r\n   filename: function (req, file, cb) {\r\n     const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)\r\n     cb(null, file.fieldname + '-' + uniqueSuffix)\r\n"
+                },
+                {
+                    "date": 1776794972479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   destination: function (req, file, cb) {\r\n     cb(null, './public/temp')\r\n   },\r\n   filename: function (req, file, cb) {\r\n-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)\r\n+   \r\n     cb(null, file.fieldname + '-' + uniqueSuffix)\r\n   }\r\n })\r\n \r\n"
+                },
+                {
+                    "date": 1776795000133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     cb(null, './public/temp')\r\n   },\r\n   filename: function (req, file, cb) {\r\n    \r\n-    cb(null, file.fieldname + '-' + uniqueSuffix)\r\n+    cb(null, file.o)\r\n   }\r\n })\r\n \r\n const upload = multer({ storage: storage })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776795071133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,5 @@\n     cb(null, file.originalname)\r\n   }\r\n })\r\n \r\n-const upload = multer({ storage: storage })\n\\ No newline at end of file\n+ export const upload = multer({ storage: storage })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776795081786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n   }\r\n })\r\n \r\n  export const upload = multer({ \r\n-    storage: storage\r\n+    storage,\r\n  })\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1776794506500,
+            "name": "Commit-0",
+            "content": "import multer from \"multer\";"
+        }
+    ]
+}
