@@ -57,6 +57,5 @@ import { registeruser } from "./controllers/user.controllers.js"
 app.use("/api/v1/user", userrouter);
 
 //  http://localhost:8000/api/v1/user/
-// from here ->routes ->controllers (asynhandler)
 
 export { app };

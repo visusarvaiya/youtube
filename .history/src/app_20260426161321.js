@@ -50,13 +50,9 @@ req.cookies = {
 
 // routes import
 import userrouter from './routes/user.routes.js'
-import { registeruser } from "./controllers/user.controllers.js"
 
 
 //routes declaration 
-app.use("/api/v1/user", userrouter);
+app.use("/api/v1/user")
 
-//  http://localhost:8000/api/v1/user/
-// from here ->routes ->controllers (asynhandler)
-
-export { app };
+export { app }

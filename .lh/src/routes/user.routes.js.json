@@ -1,0 +1,90 @@
+{
+    "sourceFile": "src/routes/user.routes.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1777199468518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1777199474011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-import \n\\ No newline at end of file\n+import { Router\r\n+    \r\n+ } from \"express\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777199480663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,1 @@\n-import { Router\r\n-    \r\n- } from \"express\";\n\\ No newline at end of file\n+import { Router } from \"express\";\r\n"
+                },
+                {
+                    "date": 1777199487993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n import { Router } from \"express\";\r\n+const routes = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777199497382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import { Router } from \"express\";\r\n-const routes = \n\\ No newline at end of file\n+const router = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777199504790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import { Router } from \"express\";\r\n-const router = \n\\ No newline at end of file\n+const router = Router()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777199516756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n import { Router } from \"express\";\r\n-const router = Router()\n\\ No newline at end of file\n+const router = Router()\r\n+export default\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777199522211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import { Router } from \"express\";\r\n const router = Router()\r\n-export default\n\\ No newline at end of file\n+export default router\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777200253155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n import { Router } from \"express\";\r\n const router = Router()\r\n+\r\n export default router\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777200268634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import { Router } from \"express\";\r\n const router = Router()\r\n-\r\n+router\r\n export default router\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777200285088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import { Router } from \"express\";\r\n const router = Router()\r\n-router\r\n+router.ro\r\n export default router\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777200295101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import { Router } from \"express\";\r\n const router = Router()\r\n-router.ro\r\n+router.route\r\n export default router\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777200300610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import { Router } from \"express\";\r\n const router = Router()\r\n-router.route\r\n+router.route(\"/re\")\r\n export default router\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777200314500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import { Router } from \"express\";\r\n const router = Router()\r\n-router.route(\"/re\")\r\n+router.route(\"/register\").post\r\n export default router\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777200322050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n import { Router } from \"express\";\r\n+import { registeruser } from \"../controllers/user.controllers\";\r\n const router = Router()\r\n-router.route(\"/register\").post\r\n+router.route(\"/register\").post(registeruser)\r\n export default router\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777200328537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import { Router } from \"express\";\r\n-import { registeruser } from \"../controllers/user.controllers\";\r\n+import { registeruser } from \"../controllers/user.controllers.js\";\r\n const router = Router()\r\n router.route(\"/register\").post(registeruser)\r\n export default router\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777201374550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import { Router } from \"express\";\r\n import { registeruser } from \"../controllers/user.controllers.js\";\r\n+\r\n+\r\n const router = Router()\r\n-router.route(\"/register\").post(registeruser)\r\n+router.route(\"/register\").post(registeruser);\r\n export default router\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777201936085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { Router } from \"express\";\r\n-import { registeruser } from \"../controllers/user.controllers.js\";\r\n+import { registeruser } from \"./controllers/user.controllers.js\";\r\n \r\n \r\n const router = Router()\r\n router.route(\"/register\").post(registeruser);\r\n\\ No newline at end of file\n-export default router\n+export default router;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777201946216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Router } from \"express\";\r\n-import { registeruser } from \"./controllers/user.controllers.js\";\r\n+import { registeruser } from \"../controllers/user.controllers.js\";\r\n \r\n \r\n const router = Router()\r\n router.route(\"/register\").post(registeruser);\r\n"
+                }
+            ],
+            "date": 1777199468518,
+            "name": "Commit-0",
+            "content": "import "
+        }
+    ]
+}

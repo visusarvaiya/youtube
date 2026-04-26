@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/controllers/user.controllers.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1777199124483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1777199131476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import \n\\ No newline at end of file\n+import { asyncHandler } from \"../utils/asyncHandler\";\r\n"
+                },
+                {
+                    "date": 1777199262462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n+const re\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777199268900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n-const re\n\\ No newline at end of file\n+const registeruser = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777199276669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n-const registeruser = \n\\ No newline at end of file\n+const registeruser = asyncHandler(asy)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777199283035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n-const registeruser = asyncHandler(asy)\n\\ No newline at end of file\n+const registeruser = asyncHandler(async(re))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777199289714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n-const registeruser = asyncHandler(async(req , ))\n\\ No newline at end of file\n+const registeruser = asyncHandler(async(req , r))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777199325169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n const registeruser = asyncHandler(async(req , res )=>{\r\n     res.status(200).json({\r\n-        mess\r\n+        messa\r\n     })\r\n })\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1777199124483,
+            "name": "Commit-0",
+            "content": "import "
+        }
+    ]
+}
