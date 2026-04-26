@@ -72,7 +72,7 @@ const registeruser = asyncHandler(async (req, res) => {
         username: username.toLowerCase()   // normalize username
     });
 
-    //  Remove sensitive fields (password, refreshToken)
+    // 🔐 Remove sensitive fields (password, refreshToken)
     const createduser = await User.findById(user._id).select(
         "-password -refreshToken"
     );

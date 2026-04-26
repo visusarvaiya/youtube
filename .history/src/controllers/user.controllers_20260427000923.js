@@ -72,12 +72,12 @@ const registeruser = asyncHandler(async (req, res) => {
         username: username.toLowerCase()   // normalize username
     });
 
-    //  Remove sensitive fields (password, refreshToken)
+    // 🔐 Remove sensitive fields (password, refreshToken)
     const createduser = await User.findById(user._id).select(
         "-password -refreshToken"
     );
 
-    //  Check if user creation failed
+    // ❌ Check if user creation failed
     if (!createduser) {
         throw new ApiError(500, "something went wrong in registration");
     }

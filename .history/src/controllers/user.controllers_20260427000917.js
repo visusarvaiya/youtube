@@ -62,7 +62,7 @@ const registeruser = asyncHandler(async (req, res) => {
         throw new ApiError(400, "avatar file is required ");
     }
 
-    //  Create new user in database
+    // 🧾 Create new user in database
     const user = await User.create({
         fullname,
         avatar: avatar.url,                // store Cloudinary URL
@@ -72,17 +72,17 @@ const registeruser = asyncHandler(async (req, res) => {
         username: username.toLowerCase()   // normalize username
     });
 
-    //  Remove sensitive fields (password, refreshToken)
+    // 🔐 Remove sensitive fields (password, refreshToken)
     const createduser = await User.findById(user._id).select(
         "-password -refreshToken"
     );
 
-    //  Check if user creation failed
+    // ❌ Check if user creation failed
     if (!createduser) {
         throw new ApiError(500, "something went wrong in registration");
     }
 
-    //  Send success response
+    // ✅ Send success response
     return res.status(201).json(
         new ApiResponse(200, createduser, "user registered successfully")
     );
