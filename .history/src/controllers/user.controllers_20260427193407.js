@@ -16,6 +16,11 @@ import { ApiResponse } from "../utils/ApiResponse.js"
 
 const registeruser = asyncHandler(async (req, res) => {
 
+   // check postman 
+    res.status(200).json({
+        message: "ok "
+    });
+
     // Get user data from frontend request body
     const { fullname, email, username, password } = req.body;
     console.log("email:", email);
@@ -40,13 +45,13 @@ const registeruser = asyncHandler(async (req, res) => {
     }
 
     // get uploaded file paths from Multer
-   const avatarLocalPath = req.files?.avatar?.[0]?.path;
-   const coverImageLocalPath = req.files?.coverImage?.[0]?.path;
+    const avatarlocalpath = req.files?.avatar[0]?.path;
+    const coverimagelocalpath = req.files?.coverimage[0]?.path;
 
     //Avatar is required
-   if (!req.files || !req.files.avatar || req.files.avatar.length === 0) {
-    throw new ApiError(400, "Avatar file is required");
-}
+    if (!avatarlocalpath) {
+        throw new ApiError(400, "avatar file is required ");
+    }
 
     // Upload images to Cloudinary
     const avatar = await uploadoncloudinary(avatarlocalpath);
@@ -56,14 +61,12 @@ const registeruser = asyncHandler(async (req, res) => {
     if (!avatar) {
         throw new ApiError(400, "avatar file is required ");
     }
-    if (!avatarLocalPath) {
-    throw new ApiError(400, "Avatar file is required");
-}
+
     //  Create new user in database
     const user = await User.create({
         fullname,
         avatar: avatar.url,                 // store Cloudinary URL
-        coverImage: coverimage?.url || "",  // optional
+        coverimage: coverimage?.url || "",  // optional
         email,
         password,                           // should be hashed in model
         username: username.toLowerCase()   // normalize username

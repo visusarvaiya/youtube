@@ -1,5 +1,5 @@
 import mongoose,{Schema} from "mongoose";
-import jwt from "jsonwebtoken";//giving you an entry pass 🎫 after login, server creates jwt 
+import jwt from"jsonwebtoken";//giving you an entry pass 🎫 after login, server creates jwt 
 import bcrypt from "bcrypt";//locking your password in a safe 🔒
 const userSchema = new Schema(
 {
@@ -50,7 +50,7 @@ const userSchema = new Schema(
            
 },
 {
-    timestamps : true 
+    Timestamps : true 
 }
 )
 userSchema.pre("save",async function (next) {
