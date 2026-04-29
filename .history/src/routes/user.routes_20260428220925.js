@@ -15,7 +15,7 @@ upload.fields([
         maxCount:1
     }
 ]),
-registeruser
+//registeruser
 
 );
 export default router;

@@ -29,12 +29,13 @@ const registeruser = asyncHandler(async (req, res) => {
     }
 
     //  Check if user already exists (by email or username)
-    const existedUser = await User.findOne({
+    const exsisteduser = await User.findOne({
         $or: [{ username }, { email }]
     });
 
-    if (existedUser) {
-        throw new ApiError(409, "User with email or username already exists");
+    // BUG: missing await (this will always be truthy)
+    if (exsisteduser) {
+        throw new ApiError(409, "user with email or username already exist");
     }
 
     // get uploaded file paths from Multer
@@ -66,7 +67,7 @@ const registeruser = asyncHandler(async (req, res) => {
 
     //  Send success response
     return res.status(201).json(
-        new ApiResponse(201, createduser, "User registered successfully")
+        new ApiResponse(200, createduser, "user registered successfully")
     );
 });
 

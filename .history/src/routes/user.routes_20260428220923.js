@@ -15,10 +15,7 @@ upload.fields([
         maxCount:1
     }
 ]),
-registeruser
+//registeruser
 
 );
 export default router;
-
-//👉 “This route accepts user registration with avatar & cover image upload,
-//  processes files using Multer, then runs register logic.”
