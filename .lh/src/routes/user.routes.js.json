@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 24,
+            "activePatchIndex": 25,
             "patches": [
                 {
                     "date": 1777199468518,
@@ -104,6 +104,10 @@
                 {
                     "date": 1777212309662,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { Router } from \"express\";\r\n import { registeruser } from \"../controllers/user.controllers.js\";\r\n-import {upload} from \"../mi\"\r\n+import {upload} from \"../mid\"\r\n \r\n \r\n const router = Router()\r\n router.route(\"/register\").post(registeruser);\r\n"
+                },
+                {
+                    "date": 1777538023883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n ]),\r\n registeruser\r\n \r\n );\r\n-router.roote\r\n+router.root\r\n export default router;\r\n \r\n //👉 “This route accepts user registration with avatar & cover image upload,\r\n //  processes files using Multer, then runs register logic.”\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1777199468518,

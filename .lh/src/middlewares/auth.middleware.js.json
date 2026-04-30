@@ -1,0 +1,118 @@
+{
+    "sourceFile": "src/middlewares/auth.middleware.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 25,
+            "patches": [
+                {
+                    "date": 1777535537341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1777535542880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n \r\n \r\n \r\n-export const \n\\ No newline at end of file\n+export const verifyJ\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535548290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import { asyncHandler } from \"../utils/asyncHandler\";\r\n \r\n \r\n \r\n\\ No newline at end of file\n-export const verifyJ\n+export const verifyJWT = asyncHandler\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535554887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n \r\n \r\n \r\n-export const verifyJWT = asyncHandler\n\\ No newline at end of file\n+export const verifyJWT = asyncHandler(async(requestAnimationFrame,))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535561861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n \r\n \r\n \r\n-export const verifyJWT = asyncHandler(async(requestAnimationFrame,))\n\\ No newline at end of file\n+export const verifyJWT = asyncHandler(async(req , res))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535568945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n \r\n \r\n \r\n-export const verifyJWT = asyncHandler(async(req , res))\n\\ No newline at end of file\n+export const verifyJWT = asyncHandler(async(req , res)=>{\r\n+    con\r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535579072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res)=>{\r\n-    con\r\n+    const token \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535590664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n \r\n \r\n \r\n-export const verifyJWT = asyncHandler(async(req , res)=>{\r\n+export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n     const token \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535600900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n-    const token \r\n+    const token = req.cookie\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535608048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n-    const token = req.cookie\r\n+    const token = req.cookies?.\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535613660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n-    const token = req.cookies?.\r\n+    const token = req.cookies?.acc\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535625545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n-    const token = req.cookies?.acc\r\n+    const token = req.cookies?.accesstoken || \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535636087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n-    const token = req.cookies?.accesstoken || \r\n+    const token = req.cookies?.accesstoken || req.header(\"a\")\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535643740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n-    const token = req.cookies?.accesstoken || req.header(\"a\")\r\n+    const token = req.cookies?.accesstoken || req.header(\"Authorization\")\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535650048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n-    const token = req.cookies?.accesstoken || req.header(\"Authorization\")\r\n+    const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535658336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n-    const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.\r\n+    const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"bearer\")\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535663956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n-    const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"bearer\")\r\n+    const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"bearer\",\"\")\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535678236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n-    const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"bearer\",\"\")\r\n+    const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"Bearer\",\"\")\r\n+    \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535684673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n     const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"Bearer\",\"\")\r\n-    \r\n+    if(!token)\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535699776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,8 @@\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n     const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"Bearer\",\"\")\r\n-    if(!token)\r\n+    if(!token){\r\n+        throw new\r\n+    }\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535709226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n+import { ApiError } from \"../utils/ApiErrors\";\r\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n \r\n \r\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n     const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"Bearer\",\"\")\r\n     if(!token){\r\n-        throw new\r\n+        throw new ApiError(401 ,\"\")\r\n     }\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535715142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n     const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"Bearer\",\"\")\r\n     if(!token){\r\n-        throw new ApiError(401 ,\"\")\r\n+        throw new ApiError(401 ,\"unathu\")\r\n     }\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535724438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n \r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n     const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"Bearer\",\"\")\r\n     if(!token){\r\n-        throw new ApiError(401 ,\"unathu\")\r\n+        throw new ApiError(401 ,\"unathorized request\")\r\n     }\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777535849849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n \r\n \r\n \r\n+\r\n+\r\n export const verifyJWT = asyncHandler(async(req , res, next )=>{\r\n     const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"Bearer\",\"\")\r\n     if(!token){\r\n         throw new ApiError(401 ,\"unathorized request\")\r\n"
+                },
+                {
+                    "date": 1777535857389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { ApiError } from \"../utils/ApiErrors\";\r\n import { asyncHandler } from \"../utils/asyncHandler\";\r\n-import jw\r\n+import jwt\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1777536018644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n     const token = req.cookies?.accesstoken || req.header(\"Authorization\")?.replace(\"Bearer\",\"\")\r\n     if(!token){\r\n         throw new ApiError(401 ,\"unathorized request\")\r\n     }\r\n-    const decodetoken = jwt\r\n+    const decodetoken = jwt.\r\n \r\n })\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1777535537341,
+            "name": "Commit-0",
+            "content": "\r\n\r\n\r\nexport const "
+        }
+    ]
+}
