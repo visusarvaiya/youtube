@@ -13,7 +13,8 @@ import { uploadoncloudinary } from "../utils/cloudinary.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 // Standard response structure for success responses
 
-import jwt from "jsonwebtoken";
+import {jwt} from "jsonwebtoken"; 
+import { app } from "../app.js";
 
 
 const generateaccesandrefreshtoken  = async(userid)=>{
@@ -96,7 +97,7 @@ const loginuser =asyncHandler(async(req,res)=>{
 
     //username or email 
     if(!username && !email){
-        throw new ApiError(400, "username or email is required");
+        throw new ApiError(400  , "email or username is required ");
     }
     // check if already registered
     const user = await User.findOne({
@@ -184,7 +185,7 @@ const refreshaccesstoken = asyncHandler(async(req,res)=>{
      const decodedtoken = jwt.verify(
         incomingrefreshtoken,
         process.env.REFRESH_TOKEN_SECERT
-     )
+    )
      //  Find user from DB using ID stored in token
       // WHY:
       // - make sure user still exists
@@ -204,23 +205,23 @@ const refreshaccesstoken = asyncHandler(async(req,res)=>{
       // Cookie options (secure settings)
      const option ={
         httpOnly:true,
-        secure:process.env.NODE_ENV === "production"
+        secure:true
      }
-           //  Generate new tokens (access + refresh)
+           // 🔁 Generate new tokens (access + refresh)
       // WHEN:
       // - access token expired
       // - user wants to stay logged in
-    const {accesstoken , refreshtoken} = await generateaccesandrefreshtoken(user._id)
+    const {accesstoken , newrefreshtoken} = await generateaccesandrefreshtoken(user._id)
 
     return res
     .status(200)
-    .cookie("accesstoken", accesstoken,option)// Set new access token cookie
-    .cookie("refreshtoken", refreshtoken,option)// set new refresh token cookie (rotated)
+    .cookie("accessToken", accessToken,option)// Set new access token cookie
+    .cookie("refreshToken", newrefreshToken,option)// set new refresh token cookie (rotated)
     .json(
         new ApiResponse(
             200,{
-                accesstoken,refreshtoken
-            },"Access token refreshed successfully"
+                accessToken,refreshToken:newrefreshtoken
+            },"ACCESS TOKEN REFRESHED"
         )
     )
   } catch (error) {

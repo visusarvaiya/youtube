@@ -28,7 +28,5 @@ router.route("/logout").post(verifyJWT,logoutuser)//route → middleware → con
 
 router.route("/refresh-token").post(refreshaccesstoken)
 
-export default router;
-
 //👉 “This route accepts user registration with avatar & cover image upload,
 //  processes files using Multer, then runs register logic.”

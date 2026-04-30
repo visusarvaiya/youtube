@@ -10,9 +10,9 @@ export const verifyJWT = asyncHandler(async(req , _, next )=>{
          // Get token from either:
       // 1. Cookies (preferred when using httpOnly cookies)
       // 2. Authorization header (used in APIs / mobile apps)
-     const token = req.cookies?.accesstoken || req.header("Authorization")?.replace("Bearer ", "")
+     const token = req.cookies?.accesstoken || req.header("Authorization")?.split("Bearer ")[1]
     if(!token){
-        throw new ApiError(401 ,"Access token is required")
+        throw new ApiError(401 ,"Unauthorized request")
     }
     // token found
 
@@ -27,7 +27,7 @@ export const verifyJWT = asyncHandler(async(req , _, next )=>{
       // Also remove sensitive fields like password & refreshToken
     const user = await User.findById(decodetoken?._id).select("-password -refreshToken")
     if(!user){
-        throw new ApiError(401 ,"User not found")
+        throw new ApiError(401 ,"Invalid access token")
     }
 
     // Attach user to request object
@@ -37,6 +37,6 @@ export const verifyJWT = asyncHandler(async(req , _, next )=>{
     //Pass control to next middleware/controller
     next()
    }catch(error){
-     throw new ApiError(401, error?.message || "Token verification failed")
+     throw new ApiError(401, error?.message || "Invalid access token")
    }
 })

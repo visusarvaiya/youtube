@@ -206,7 +206,7 @@ const refreshaccesstoken = asyncHandler(async(req,res)=>{
         httpOnly:true,
         secure:process.env.NODE_ENV === "production"
      }
-           //  Generate new tokens (access + refresh)
+           // 🔁 Generate new tokens (access + refresh)
       // WHEN:
       // - access token expired
       // - user wants to stay logged in
