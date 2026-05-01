@@ -1,0 +1,98 @@
+{
+    "sourceFile": "src/models/subscription.model.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 20,
+            "patches": [
+                {
+                    "date": 1777569691381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1777569698124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import \n\\ No newline at end of file\n+import mongoose , from \"mongoose\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569705478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import mongoose , from \"mongoose\";\n\\ No newline at end of file\n+import mongoose,{Schema} from \"mongoose\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569711823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import mongoose,{Schema} from \"mongoose\";\n\\ No newline at end of file\n+import mongoose ,{Schema} from \"mongoose\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569818880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-import mongoose ,{Schema} from \"mongoose\";\n\\ No newline at end of file\n+import mongoose ,{Schema} from \"mongoose\";\r\n+const subscription = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569827832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n-const subscription = \n\\ No newline at end of file\n+const subscription = new sch\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569834135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n-const subscription = new sch\n\\ No newline at end of file\n+const subscription = new Schema({})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569871782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n-const subscription = new Schema({})\n\\ No newline at end of file\n+const subscription = new Schema({})\r\n+\r\n+export \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569876906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n const subscription = new Schema({})\r\n \r\n-export \n\\ No newline at end of file\n+export const su\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569882200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n const subscription = new Schema({})\r\n \r\n-export const su\n\\ No newline at end of file\n+export const Sub\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569887450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n const subscription = new Schema({})\r\n \r\n-export const Sub\n\\ No newline at end of file\n+export const Subscrition\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569893039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n const subscription = new Schema({})\r\n \r\n-export const Subscrition\n\\ No newline at end of file\n+export const Subscription \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569900007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n const subscription = new Schema({})\r\n \r\n-export const Subscription \n\\ No newline at end of file\n+export const Subscription = moo\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569905771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n const subscription = new Schema({})\r\n \r\n-export const Subscription = moo\n\\ No newline at end of file\n+export const Subscription = moongos\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569911781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n const subscription = new Schema({})\r\n \r\n-export const Subscription = moongos\n\\ No newline at end of file\n+export const Subscription = mongoose.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569921221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n const subscription = new Schema({})\r\n \r\n-export const Subscription = mongoose.\n\\ No newline at end of file\n+export const Subscription = mongoose.model(\"Subscription\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569933416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n-const subscription = new Schema({})\r\n+const subscriptionschema = new Schema({})\r\n \r\n\\ No newline at end of file\n-export const Subscription = mongoose.model(\"Subscription\")\n+export const Subscription = mongoose.model(\"Subscription\",)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569939175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n-const subscriptionschema = new Schema({})\r\n+const subscriptionSchema = new Schema({})\r\n \r\n export const Subscription = mongoose.model(\"Subscription\",)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777569944980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n const subscriptionSchema = new Schema({})\r\n \r\n-export const Subscription = mongoose.model(\"Subscription\",)\n\\ No newline at end of file\n+export const Subscription = mongoose.model(\"Subscription\",su)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777654483841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n const subscriptionSchema = new Schema({\r\n-    s\r\n+     \r\n })\r\n \r\n export const Subscription = mongoose.model(\"Subscription\",subscriptionSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777654511531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import mongoose ,{Schema} from \"mongoose\";\r\n const subscriptionSchema = new Schema({\r\n     subscriber:{\r\n-        type:Schema.Types\r\n+        type:Schema.Types.\r\n     }\r\n })\r\n \r\n export const Subscription = mongoose.model(\"Subscription\",subscriptionSchema)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1777569691381,
+            "name": "Commit-0",
+            "content": "import "
+        }
+    ]
+}
