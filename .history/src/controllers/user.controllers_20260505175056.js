@@ -399,20 +399,12 @@ const getuserchannelprofile = asyncHandler(async(req, res)=>{
     }
    ])
 
-   if(!channel?.length){
-     throw new ApiError(404 , "channel does not exists")
-   }
-
-   return res
-   .status(200)
-   .json(
-    new ApiResponse(200 ,channel[0], "user channel fetched successfully")
-   )
+   if(!channel?.length)
      
 })
 
 
-export {  registeruser,  
+export {  registeruser, 
           loginuser,
           logoutuser,
           refreshaccesstoken,

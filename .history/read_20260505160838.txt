@@ -44,5 +44,4 @@ Website loads images → static serves files
 User login → cookies stored → cookieParser reads them
 ...........................................................
 
-$match pipeline - work like where clause
-$lookup pipeline - combine 2 table
+$match pipeline 

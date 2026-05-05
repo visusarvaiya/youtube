@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 14,
+            "activePatchIndex": 23,
             "patches": [
                 {
                     "date": 1776234971194,
@@ -64,6 +64,42 @@
                 {
                     "date": 1776245658007,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,5 +37,8 @@\n  npm i cookie-parser cors\r\n \r\n  Cookies are small pieces of data that a browser stores \r\n  and sends back to the server with every request.\r\n- \n\\ No newline at end of file\n+...........................................................\r\n+ User submits form → urlencoded handles data\r\n+Website loads images → static serves files\r\n+User login → cookies stored → cookieParser reads them\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777977502177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,5 +40,5 @@\n  and sends back to the server with every request.\r\n ...........................................................\r\n  User submits form → urlencoded handles data\r\n Website loads images → static serves files\r\n-User login → cookies stored → cookieParser reads them\n\\ No newline at end of file\n+User login → cookies stored → cookieParser reads them\r\n"
+                },
+                {
+                    "date": 1777977507857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,4 +41,6 @@\n ...........................................................\r\n  User submits form → urlencoded handles data\r\n Website loads images → static serves files\r\n User login → cookies stored → cookieParser reads them\r\n+...........................................................\r\n+\r\n"
+                },
+                {
+                    "date": 1777977513678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,4 +43,5 @@\n Website loads images → static serves files\r\n User login → cookies stored → cookieParser reads them\r\n ...........................................................\r\n \r\n+$match \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777977520184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,5 +43,5 @@\n Website loads images → static serves files\r\n User login → cookies stored → cookieParser reads them\r\n ...........................................................\r\n \r\n-$match \n\\ No newline at end of file\n+$match pipeline - \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777977532544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,5 +43,5 @@\n Website loads images → static serves files\r\n User login → cookies stored → cookieParser reads them\r\n ...........................................................\r\n \r\n-$match pipeline - \n\\ No newline at end of file\n+$match pipeline - work like where \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777977540319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,5 +43,5 @@\n Website loads images → static serves files\r\n User login → cookies stored → cookieParser reads them\r\n ...........................................................\r\n \r\n-$match pipeline - work like where \n\\ No newline at end of file\n+$match pipeline - work like wherecl\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777977546514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,5 +43,5 @@\n Website loads images → static serves files\r\n User login → cookies stored → cookieParser reads them\r\n ...........................................................\r\n \r\n-$match pipeline - work like wherecl\n\\ No newline at end of file\n+$match pipeline - work like where claus\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1777977829532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,5 +43,5 @@\n Website loads images → static serves files\r\n User login → cookies stored → cookieParser reads them\r\n ...........................................................\r\n \r\n-$match pipeline - work like where claus\n\\ No newline at end of file\n+$match pipeline - work like where clause\r\n"
+                },
+                {
+                    "date": 1777977836031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,5 +44,5 @@\n User login → cookies stored → cookieParser reads them\r\n ...........................................................\r\n \r\n $match pipeline - work like where clause\r\n-$lookup pipi\n\\ No newline at end of file\n+$lookup pipeline\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1776234971194,

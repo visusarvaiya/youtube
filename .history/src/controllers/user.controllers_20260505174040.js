@@ -378,41 +378,17 @@ const getuserchannelprofile = asyncHandler(async(req, res)=>{
             } ,
             issubcribed:{
                 $cond:{
-                    if:{$in :[req.user?._id,"$subcribers.subscriber" ]},
-                    then:true,
-                    else:false  
+                    if:{$}
                 }
             }
         }
-    },{
-        $project:{
-            fullname:1,
-            username:1,
-            subscribercount:1,
-            channelsubcribedtocount:1,
-            issubcribed:1,
-            avatar:1,
-            coverImage:1,
-            email:1
-
-        }
     }
    ])
-
-   if(!channel?.length){
-     throw new ApiError(404 , "channel does not exists")
-   }
-
-   return res
-   .status(200)
-   .json(
-    new ApiResponse(200 ,channel[0], "user channel fetched successfully")
-   )
      
 })
 
 
-export {  registeruser,  
+export {  registeruser, 
           loginuser,
           logoutuser,
           refreshaccesstoken,
