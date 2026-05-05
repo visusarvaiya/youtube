@@ -248,8 +248,6 @@ const changecurrentpassword = asyncHandler(async(req, res)=>{
 const getcurrentuser = asyncHandler(async(req, res )=>{
     return res
     .status(200)
-    .json(200 ,req.user,"current user is fetched successfully ")
+    .json()
 })
-
-
-export { registeruser, loginuser, logoutuser,refreshaccesstoken,changecurrentpassword,getcurrentuser };
+export { registeruser, loginuser, logoutuser,refreshaccesstoken };

@@ -250,6 +250,4 @@ const getcurrentuser = asyncHandler(async(req, res )=>{
     .status(200)
     .json(200 ,req.user,"current user is fetched successfully ")
 })
-
-
-export { registeruser, loginuser, logoutuser,refreshaccesstoken,changecurrentpassword,getcurrentuser };
+export { registeruser, loginuser, logoutuser,refreshaccesstoken,changecurrentpassword, };

@@ -237,19 +237,7 @@ const changecurrentpassword = asyncHandler(async(req, res)=>{
         throw new ApiError(400,"Invalid Old Password")
 
         user.password = newpassword
-        await user.save({validateBeforeSave:false})
-
-        return res
-        .status(200)
-        .json(new ApiResponse(200 ,{},"Password Chnagwed Successfully !"))
+        user.save()
     }
 })
-
-const getcurrentuser = asyncHandler(async(req, res )=>{
-    return res
-    .status(200)
-    .json(200 ,req.user,"current user is fetched successfully ")
-})
-
-
-export { registeruser, loginuser, logoutuser,refreshaccesstoken,changecurrentpassword,getcurrentuser };
+export { registeruser, loginuser, logoutuser,refreshaccesstoken };
