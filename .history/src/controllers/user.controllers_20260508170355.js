@@ -488,51 +488,12 @@ const getwatchhistory = asyncHandler(async(req,res)=>{
             },
 
         },
-        {  
+        {
             $lookup:{
-                from:"vedios",// currently in user get from vedios
-                localField: "watchhistory" ,// in user - watchhistory
-                foreignField:"_id",// from vedios 
-                as:"watchhistory" ,// save as 
-                pipeline:[
-                    {
-                        $lookup:{
-                            from:"user",
-                            localField:"owner",// from vedios-inside it owner
-                            foreignField:"_id",
-                            as:"owner",  
-                            pipeline:[
-                                {
-                                    $project:{
-                                        fullname:1,
-                                        username:1,
-                                        avatar:1
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                       $addFields:{
-                        owner:{
-                            $first:"$owner"
                 
-                        }
-                       } 
-                    }
-                ]
             }
         }
     ])
-    return res.
-    status(200)
-    .json(
-        new ApiResponse(
-            200,
-            user[0].watchhistory,
-            "watch history fetched successfully"
-        )
-    )
 })
 
 export {  

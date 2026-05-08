@@ -504,35 +504,17 @@ const getwatchhistory = asyncHandler(async(req,res)=>{
                             pipeline:[
                                 {
                                     $project:{
-                                        fullname:1,
+                                        fullname:1
                                         username:1,
-                                        avatar:1
                                     }
                                 }
                             ]
                         }
-                    },
-                    {
-                       $addFields:{
-                        owner:{
-                            $first:"$owner"
-                
-                        }
-                       } 
                     }
                 ]
             }
         }
     ])
-    return res.
-    status(200)
-    .json(
-        new ApiResponse(
-            200,
-            user[0].watchhistory,
-            "watch history fetched successfully"
-        )
-    )
 })
 
 export {  

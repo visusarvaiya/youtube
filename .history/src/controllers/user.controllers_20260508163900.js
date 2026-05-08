@@ -479,61 +479,7 @@ const getuserchannelprofile = asyncHandler(async(req, res)=>{
      
 })
 
-const getwatchhistory = asyncHandler(async(req,res)=>{
-    const user = await User.aggregate([
-        {
-            //get user and match it 
-            $match:{
-                _id:new mongoose.Type.ObjectId(req.user._id)
-            },
-
-        },
-        {  
-            $lookup:{
-                from:"vedios",// currently in user get from vedios
-                localField: "watchhistory" ,// in user - watchhistory
-                foreignField:"_id",// from vedios 
-                as:"watchhistory" ,// save as 
-                pipeline:[
-                    {
-                        $lookup:{
-                            from:"user",
-                            localField:"owner",// from vedios-inside it owner
-                            foreignField:"_id",
-                            as:"owner",  
-                            pipeline:[
-                                {
-                                    $project:{
-                                        fullname:1,
-                                        username:1,
-                                        avatar:1
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                       $addFields:{
-                        owner:{
-                            $first:"$owner"
-                
-                        }
-                       } 
-                    }
-                ]
-            }
-        }
-    ])
-    return res.
-    status(200)
-    .json(
-        new ApiResponse(
-            200,
-            user[0].watchhistory,
-            "watch history fetched successfully"
-        )
-    )
-})
+const getwatchhistory = asyncHandler(async)
 
 export {  
           registeruser,  
@@ -545,7 +491,6 @@ export {
           updateaccountdetails,
           updateuseravatar,
           updatecoverimage,
-         getuserchannelprofile,
-         getwatchhistory 
+         getuserchannelprofile
         
         };
