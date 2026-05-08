@@ -365,17 +365,8 @@ const updatecoverimage= asyncHandler(async(req, res)=>{
 
 })
 
-// Controller function to fetch user's channel profile with subscriber counts and subscription status
-// URL Parameter: username (the channel/user whose profile we want to fetch)
 const getuserchannelprofile = asyncHandler(async(req, res)=>{
-    // Extract username from URL parameters (req.params)
-    // Example: GET /channel/johndoe → username = "johndoe"
     const {username} = req.params
-
-    // VALIDATION: Check if username is provided and not empty
-    // ?. = optional chaining (returns undefined if username doesn't exist, no error thrown)
-    // .trim() = removes leading/trailing whitespace
-    // if empty string → throw 400 Bad Request error
     if(!username?.trim()){
         throw new ApiError(400 , "username is missing")
     }
@@ -459,21 +450,13 @@ const getuserchannelprofile = asyncHandler(async(req, res)=>{
     }
    ])
 
-   // ERROR HANDLING: Check if aggregation returned empty results
-   // If channel array is empty (length = 0), user/channel doesn't exist
    if(!channel?.length){
-     // Throw 404 Not Found error with custom message
      throw new ApiError(404 , "channel does not exists")
    }
 
-   // SUCCESS RESPONSE: Send channel data back to client
    return res
-   .status(200)                          // HTTP 200 - OK status
+   .status(200)
    .json(
-    // ApiResponse wrapper with:
-    // - statusCode: 200
-    // - data: channel[0] (first/only result from aggregation pipeline)
-    // - message: descriptive success message
     new ApiResponse(200 ,channel[0], "user channel fetched successfully")
    )
      

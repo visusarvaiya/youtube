@@ -365,17 +365,8 @@ const updatecoverimage= asyncHandler(async(req, res)=>{
 
 })
 
-// Controller function to fetch user's channel profile with subscriber counts and subscription status
-// URL Parameter: username (the channel/user whose profile we want to fetch)
 const getuserchannelprofile = asyncHandler(async(req, res)=>{
-    // Extract username from URL parameters (req.params)
-    // Example: GET /channel/johndoe → username = "johndoe"
     const {username} = req.params
-
-    // VALIDATION: Check if username is provided and not empty
-    // ?. = optional chaining (returns undefined if username doesn't exist, no error thrown)
-    // .trim() = removes leading/trailing whitespace
-    // if empty string → throw 400 Bad Request error
     if(!username?.trim()){
         throw new ApiError(400 , "username is missing")
     }

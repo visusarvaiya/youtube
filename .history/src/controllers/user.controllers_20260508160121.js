@@ -305,24 +305,17 @@ const updateuseravatar = asyncHandler(async(req, res)=>{
    }
    // Find logged-in user and update avatar field
    const user = await User.findByIdAndUpdate(
-    //Current logged-in user's ID
      req.user?._id,
-
-     // data to update
      {
         $set:{
-            // Save Cloudinary image URL in database
-
             avatar:avatar.url
         }
      },
      {
-        //     // Return updated document instead of old document
         new :true
      }
-     // Remove password field from returned user object
    ).select("-password")
-// success response
+
      return res
    .status(200)
    .json(
@@ -365,115 +358,71 @@ const updatecoverimage= asyncHandler(async(req, res)=>{
 
 })
 
-// Controller function to fetch user's channel profile with subscriber counts and subscription status
-// URL Parameter: username (the channel/user whose profile we want to fetch)
 const getuserchannelprofile = asyncHandler(async(req, res)=>{
-    // Extract username from URL parameters (req.params)
-    // Example: GET /channel/johndoe → username = "johndoe"
     const {username} = req.params
-
-    // VALIDATION: Check if username is provided and not empty
-    // ?. = optional chaining (returns undefined if username doesn't exist, no error thrown)
-    // .trim() = removes leading/trailing whitespace
-    // if empty string → throw 400 Bad Request error
     if(!username?.trim()){
         throw new ApiError(400 , "username is missing")
     }
-   // MongoDB Aggregation Pipeline to fetch user channel profile with subscriber information
    const channel = await User.aggregate([
-    // STAGE 1: $match - Filter user by username (case-insensitive)
-    // This finds the specific channel/user whose profile we want to fetch
     {
         $match:{
-            username:username?.toLowerCase()  // Convert to lowercase for case-insensitive search
+            username:username?.toLowerCase()
         }
     },
-
-    // STAGE 2: $lookup - LEFT JOIN with subscription collection
-    // Purpose: Find all subscribers of this channel
-    // Logic: Match users whose subscription.channel field equals this user's _id
-    // Result: Returns array of subscription documents in "subscribers" field
     {
         $lookup:{
-            from:"subscription",           // Join with subscription collection
-            localField:"_id",              // User's ID
-            foreignField:"channel",        // Field in subscription where channel = this user's ID (these are people subscribing to this user)
-            as:"subscribers"               // Store results in "subscribers" array
+            from:"subscription",
+            localField:"_id",
+            foreignField:"channel", // channel youtube - subcriber 1,2,3, so select channel
+            as:"subscribers"
         }
     },
-
-    // STAGE 3: $lookup - LEFT JOIN with subscription collection (second time)
-    // Purpose: Find all channels that this user is subscribed to
-    // Logic: Match subscriptions where subscription.subscriber field equals this user's _id
-    // Result: Returns array of subscription documents in "subscribedto" field
     {
         $lookup:{
-            from:"subscription",           // Join with subscription collection
-            localField:"_id",              // User's ID
-            foreignField:"subscriber",     // Field in subscription where subscriber = this user's ID (channels this user follows)
-            as:"subscribedto"              // Store results in "subscribedto" array
+            from:"subscription",
+            localField:"_id",
+            foreignField:"subscriber", //subcriber1 -  channel 1,2,3
+            as:"subscribedto"
         }
     },
-
-    // STAGE 4: $addFields - Add computed/derived fields to document
-    // This stage calculates counts and subscription status
     {
         $addFields:{
-            // Count total number of subscribers this channel has
             subscribercount:{
-                $size:"$subscribers"       // Get length of subscribers array
+                $size:"$subscribers"
             },
-
-            // Count total number of channels this user is subscribed to
             channelsubcribedtocount:{
-                $size:"$subscribedto"      // Get length of subscribedto array
-            },
-
-            // Check if the current logged-in user (req.user._id) is subscribed to this channel
-            // Returns true if found, false otherwise
+                $size:"$subcribedto"
+            } ,
             issubcribed:{
                 $cond:{
-                    // Check if current user's ID exists in this channel's subscribers list
-                    if:{$in :[req.user?._id,"$subscribedto.subscriber"]},  // Look in subscribedto array's subscriber field
-                    then:true,             // If found, user is subscribed
-                    else:false             // If not found, user is not subscribed
+                    if:{$in :[req.user?._id,"$subcribers.subscriber" ]},
+                    then:true,
+                    else:false  
                 }
             }
         }
-    },
-
-    // STAGE 5: $project - Select only specific fields to return to client
-    // This reduces data transfer and hides unnecessary information
-    {
+    },{
         $project:{
-            fullname:1,                    // 1 = include this field
-            username:1,                    // Include username
-            subscribercount:1,             // Include subscriber count (computed field)
-            channelsubcribedtocount:1,     // Include subscribed to count (computed field)
-            issubcribed:1,                 // Include subscription status (computed field)
-            avatar:1,                      // Include profile picture URL
-            coverImage:1,                  // Include cover image URL
-            email:1                        // Include email address
-            // password and refreshToken are automatically excluded (not listed here)
+            fullname:1,
+            username:1,
+            subscribercount:1,
+            channelsubcribedtocount:1,
+            issubcribed:1,
+            avatar:1,
+            coverImage:1,
+            email:1
+
         }
     }
    ])
 
-   // ERROR HANDLING: Check if aggregation returned empty results
-   // If channel array is empty (length = 0), user/channel doesn't exist
    if(!channel?.length){
-     // Throw 404 Not Found error with custom message
      throw new ApiError(404 , "channel does not exists")
    }
 
-   // SUCCESS RESPONSE: Send channel data back to client
    return res
-   .status(200)                          // HTTP 200 - OK status
+   .status(200)
    .json(
-    // ApiResponse wrapper with:
-    // - statusCode: 200
-    // - data: channel[0] (first/only result from aggregation pipeline)
-    // - message: descriptive success message
     new ApiResponse(200 ,channel[0], "user channel fetched successfully")
    )
      
