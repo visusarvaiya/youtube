@@ -1,0 +1,130 @@
+{
+    "sourceFile": "src/models/like.model.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 28,
+            "patches": [
+                {
+                    "date": 1778305054552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1778305078017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n+const likeschea\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305085518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const likeschea\n\\ No newline at end of file\n+const likeSchema\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305093285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const likeSchema\n\\ No newline at end of file\n+const likeSchema = new scge\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305102485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const likeSchema = new scge\n\\ No newline at end of file\n+const likeSchema = new Schema \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305212597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const likeSchema = new Schema \n\\ No newline at end of file\n+const likeSchema = new Schema ()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305218582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const likeSchema = new Schema ()\n\\ No newline at end of file\n+const likeSchema = new Schema ({},{time})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305228900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,4 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-const likeSchema = new Schema ({},{time})\n\\ No newline at end of file\n+const likeSchema = new Schema ({\r\n+    \r\n+},{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305235469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const likeSchema = new Schema ({\r\n-    \r\n+    vedio:{\r\n+        \r\n+    }\r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305241591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const likeSchema = new Schema ({\r\n     vedio:{\r\n-        \r\n+        type:\r\n     }\r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305247300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const likeSchema = new Schema ({\r\n     vedio:{\r\n-        type:\r\n+        type:Schema.type\r\n     }\r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305252537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const likeSchema = new Schema ({\r\n     vedio:{\r\n-        type:Schema.type\r\n+        type:Schema.Types.ObjectId\r\n     }\r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305259177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const likeSchema = new Schema ({\r\n     vedio:{\r\n-        type:Schema.Types.ObjectId\r\n+        type:Schema.Types.ObjectId,\r\n+        ref:\"vedio\"\r\n     }\r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305264588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const likeSchema = new Schema ({\r\n     vedio:{\r\n         type:Schema.Types.ObjectId,\r\n-        ref:\"vedio\"\r\n+        ref:\"dio\"\r\n     }\r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305270054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import mongoose,{Schema} from \"mongoose\";\r\n const likeSchema = new Schema ({\r\n     vedio:{\r\n         type:Schema.Types.ObjectId,\r\n-        ref:\"dio\"\r\n-    }\r\n+        ref:\"Vedio\"\r\n+    },\r\n+    \r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305275744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,6 @@\n         type:Schema.Types.ObjectId,\r\n         ref:\"Vedio\"\r\n     },\r\n     \r\n+\r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305282041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,10 @@\n     vedio:{\r\n         type:Schema.Types.ObjectId,\r\n         ref:\"Vedio\"\r\n     },\r\n-    \r\n+        comment:{\r\n+        type:Schema.Types.ObjectId,\r\n+        ref:\"Vedio\"\r\n+    },\r\n \r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305289689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n         ref:\"Vedio\"\r\n     },\r\n         comment:{\r\n         type:Schema.Types.ObjectId,\r\n-        ref:\"Vedio\"\r\n+        ref:\"Co\"\r\n     },\r\n \r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305297504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n         ref:\"Vedio\"\r\n     },\r\n         comment:{\r\n         type:Schema.Types.ObjectId,\r\n-        ref:\"Co\"\r\n+        ref:\"Comment\"\r\n     },\r\n+    \r\n \r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305305355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,10 @@\n         comment:{\r\n         type:Schema.Types.ObjectId,\r\n         ref:\"Comment\"\r\n     },\r\n-    \r\n+        tweet:{\r\n+        type:Schema.Types.ObjectId,\r\n+        ref:\"Vedio\"\r\n+    },\r\n \r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305311361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n         ref:\"Comment\"\r\n     },\r\n         tweet:{\r\n         type:Schema.Types.ObjectId,\r\n-        ref:\"Vedio\"\r\n+        ref:\"   T\"\r\n     },\r\n \r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305317776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n         ref:\"Comment\"\r\n     },\r\n         tweet:{\r\n         type:Schema.Types.ObjectId,\r\n-        ref:\"   T\"\r\n+        ref:\"weet\"\r\n     },\r\n \r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305324651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,12 @@\n         ref:\"Comment\"\r\n     },\r\n         tweet:{\r\n         type:Schema.Types.ObjectId,\r\n-        ref:\"weet\"\r\n+        ref:\"Tweet\"\r\n     },\r\n+        vedio:{\r\n+        type:Schema.Types.ObjectId,\r\n+        ref:\"Vedio\"\r\n+    },\r\n \r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305342214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         tweet:{\r\n         type:Schema.Types.ObjectId,\r\n         ref:\"Tweet\"\r\n     },\r\n-        vedio:{\r\n+    l:{\r\n         type:Schema.Types.ObjectId,\r\n         ref:\"Vedio\"\r\n     },\r\n \r\n"
+                },
+                {
+                    "date": 1778305350254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n         tweet:{\r\n         type:Schema.Types.ObjectId,\r\n         ref:\"Tweet\"\r\n     },\r\n-    l:{\r\n+    likedby:{\r\n         type:Schema.Types.ObjectId,\r\n-        ref:\"Vedio\"\r\n+        ref:\"\"\r\n     },\r\n \r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305359616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n         tweet:{\r\n         type:Schema.Types.ObjectId,\r\n         ref:\"Tweet\"\r\n     },\r\n-    likedby:{\r\n+      likedby:{\r\n         type:Schema.Types.ObjectId,\r\n-        ref:\"\"\r\n+        ref:\"User\"\r\n     },\r\n \r\n },{timestamps:true})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305372377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,7 @@\n         type:Schema.Types.ObjectId,\r\n         ref:\"User\"\r\n     },\r\n \r\n-},{timestamps:true})\n\\ No newline at end of file\n+},{timestamps:true})\r\n+\r\n+export cone\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305387338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n     },\r\n \r\n },{timestamps:true})\r\n \r\n-export cone\n\\ No newline at end of file\n+export const\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305395749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n     },\r\n \r\n },{timestamps:true})\r\n \r\n-export const like = mon'\n\\ No newline at end of file\n+export const like = mon\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1778305054552,
+            "name": "Commit-0",
+            "content": "import mongoose,{Schema} from \"mongoose\";\r\n"
+        }
+    ]
+}

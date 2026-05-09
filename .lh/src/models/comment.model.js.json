@@ -1,0 +1,190 @@
+{
+    "sourceFile": "src/models/comment.model.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 43,
+            "patches": [
+                {
+                    "date": 1778304569552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1778304580514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n-import mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";\n\\ No newline at end of file\n+import mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";\r\n+\r\n"
+                },
+                {
+                    "date": 1778304611246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n import mongoose,{Schema} from \"mongoose\";\r\n import mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";\r\n \r\n+const \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304618209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose,{Schema} from \"mongoose\";\r\n import mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";\r\n \r\n-const \n\\ No newline at end of file\n+const commentSchema\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304623746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose,{Schema} from \"mongoose\";\r\n import mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";\r\n \r\n-const commentSchema\n\\ No newline at end of file\n+const commentSchema = new Schema\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304630874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n import mongoose,{Schema} from \"mongoose\";\r\n import mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";\r\n \r\n-const commentSchema = new Schema\n\\ No newline at end of file\n+const commentSchema = new Schema({\r\n+\r\n+\r\n+})\r\n+\r\n"
+                },
+                {
+                    "date": 1778304636110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,4 +5,5 @@\n \r\n \r\n })\r\n \r\n+commentSchema.plugin\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304641604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,5 @@\n \r\n \r\n })\r\n \r\n-commentSchema.plugin\n\\ No newline at end of file\n+commentSchema.plugin(mo)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304681388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,5 @@\n \r\n \r\n })\r\n \r\n-commentSchema.plugin(mo)\n\\ No newline at end of file\n+commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304686675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,4 +6,5 @@\n \r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n+export con\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304692624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n-export con\n\\ No newline at end of file\n+export const comm\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304701313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n-export const comm\n\\ No newline at end of file\n+export const comment = mo\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304707853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n-export const comment = mo\n\\ No newline at end of file\n+export const comment = mongoose.Schema(\"\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304713307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n-export const comment = mongoose.Schema(\"\")\n\\ No newline at end of file\n+export const comment = mongoose.Schema(\"Comment\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304718572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n-export const comment = mongoose.Schema(\"Comment\")\n\\ No newline at end of file\n+export const comment = mongoose.Schema(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304725156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n-export const comment = mongoose.Schema(\"Comment\",commentSchema)\n\\ No newline at end of file\n+export const comment = mongoose.Schem000a(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304730868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n \r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n-export const comment = mongoose.Schem000a(\"Comment\",commentSchema)\n\\ No newline at end of file\n+export const comment = mongoose.(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304740352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import mongoose,{Schema} from \"mongoose\";\r\n import mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";\r\n \r\n const commentSchema = new Schema({\r\n+  \r\n \r\n-\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n\\ No newline at end of file\n-export const comment = mongoose.(\"Comment\",commentSchema)\n+export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304753937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";\r\n \r\n const commentSchema = new Schema({\r\n   \r\n-\r\n+   \r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304761238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";\r\n \r\n const commentSchema = new Schema({\r\n   \r\n-   \r\n+   con\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304767683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,11 @@\n import mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";\r\n \r\n const commentSchema = new Schema({\r\n   \r\n-   con\r\n+   content:{\r\n+    \r\n+   }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304773029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const commentSchema = new Schema({\r\n   \r\n    content:{\r\n-    \r\n+     typ\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304778113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const commentSchema = new Schema({\r\n   \r\n    content:{\r\n-     typ\r\n+     type:String\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304783276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n \r\n const commentSchema = new Schema({\r\n   \r\n    content:{\r\n-     type:String\r\n+     type:String,\r\n+     requi\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304793123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const commentSchema = new Schema({\r\n   \r\n    content:{\r\n      type:String,\r\n-     requi\r\n+     required:true\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304800578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,15 @@\n import mongoose,{Schema} from \"mongoose\";\r\n import mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";\r\n+import { Vedio } from \"./vedio.model\";\r\n \r\n const commentSchema = new Schema({\r\n   \r\n    content:{\r\n      type:String,\r\n      required:true\r\n-   }\r\n+   },\r\n+   Vedio\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304808202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n    content:{\r\n      type:String,\r\n      required:true\r\n    },\r\n-   Vedio\r\n+   vvedio:{\r\n+\r\n+   }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304814786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n    content:{\r\n      type:String,\r\n      required:true\r\n    },\r\n-   vvedio:{\r\n-\r\n+   vedio:{\r\n+    \r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304820461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      type:String,\r\n      required:true\r\n    },\r\n    vedio:{\r\n-    \r\n+    type:s\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304826281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      type:String,\r\n      required:true\r\n    },\r\n    vedio:{\r\n-    type:s\r\n+    type:String,\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304837270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      type:String,\r\n      required:true\r\n    },\r\n    vedio:{\r\n-    type:String,\r\n+    type:,\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304843102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      type:String,\r\n      required:true\r\n    },\r\n    vedio:{\r\n-    type:,\r\n+    type:Schema.t,\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304849423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      type:String,\r\n      required:true\r\n    },\r\n    vedio:{\r\n-    type:Schema.t,\r\n+    type:Schema.Types.obj,\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304859263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n      type:String,\r\n      required:true\r\n    },\r\n    vedio:{\r\n-    type:Schema.Types.obj,\r\n+    type:Schema.Types.ObjectId,\r\n+    ref\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304865217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n      required:true\r\n    },\r\n    vedio:{\r\n     type:Schema.Types.ObjectId,\r\n-    ref\r\n+    ref:\"vedio\"\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304875622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,11 @@\n      required:true\r\n    },\r\n    vedio:{\r\n     type:Schema.Types.ObjectId,\r\n-    ref:\"vedio\"\r\n-   }\r\n+    ref:\"Vedio\"\r\n+   },\r\n+   \r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304881538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n    vedio:{\r\n     type:Schema.Types.ObjectId,\r\n     ref:\"Vedio\"\r\n    },\r\n-   \r\n+   owner\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304889117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,11 @@\n    vedio:{\r\n     type:Schema.Types.ObjectId,\r\n     ref:\"Vedio\"\r\n    },\r\n-   owner\r\n+   owner:{\r\n+    type\r\n+   }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304896249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     type:Schema.Types.ObjectId,\r\n     ref:\"Vedio\"\r\n    },\r\n    owner:{\r\n-    type\r\n+    type:Schema.ty\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304905672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     type:Schema.Types.ObjectId,\r\n     ref:\"Vedio\"\r\n    },\r\n    owner:{\r\n-    type:Schema.ty\r\n+    type:Schema.Types.ObjectId\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304910842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n     type:Schema.Types.ObjectId,\r\n     ref:\"Vedio\"\r\n    },\r\n    owner:{\r\n-    type:Schema.Types.ObjectId\r\n+    type:Schema.Types.ObjectId,\r\n+    ref:\"\"\r\n    }\r\n })\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n"
+                },
+                {
+                    "date": 1778304942785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n     ref:\"Vedio\"\r\n    },\r\n    owner:{\r\n     type:Schema.Types.ObjectId,\r\n-    ref:\"\"\r\n+    ref:\"User\"\r\n    }\r\n-})\r\n+},{time})\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778304948355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n    owner:{\r\n     type:Schema.Types.ObjectId,\r\n     ref:\"User\"\r\n    }\r\n-},{time})\r\n+},{timestamps:true})\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305423859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n    }\r\n },{timestamps:true})\r\n \r\n commentSchema.plugin(mongooseAggregatePaginate)\r\n-export const comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n+export const Comment = mongoose.model(\"Comment\",commentSchema)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1778304569552,
+            "name": "Commit-0",
+            "content": "import mongoose,{Schema} from \"mongoose\";\r\nimport mongooseAggregatePaginate from \"mongoose-aggregate-paginate-v2\";"
+        }
+    ]
+}

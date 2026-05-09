@@ -1,0 +1,178 @@
+{
+    "sourceFile": "src/models/playlist.model.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 40,
+            "patches": [
+                {
+                    "date": 1778305480350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1778305492801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-import mongoose,{Schema} from \"mongoose\";\n\\ No newline at end of file\n+import mongoose,{Schema} from \"mongoose\";\\\r\n+\r\n+const playlistschema\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305503431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n-const playlistschema\n\\ No newline at end of file\n+const playlistSchema = new Sche\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305508889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n-const playlistSchema = new Sche\n\\ No newline at end of file\n+const playlistSchema = new Schema({,{}})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305515623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n-const playlistSchema = new Schema({,{}})\n\\ No newline at end of file\n+const playlistSchema = new Schema({},{timestamps:})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305522025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n-const playlistSchema = new Schema({},{timestamps:})\n\\ No newline at end of file\n+const playlistSchema = new Schema({},{timestamps:true})\r\n+\r\n+export \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305527330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n const playlistSchema = new Schema({},{timestamps:true})\r\n \r\n-export \n\\ No newline at end of file\n+export const Platlist\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305533901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n const playlistSchema = new Schema({},{timestamps:true})\r\n \r\n-export const Platlist\n\\ No newline at end of file\n+export const Platlist = mongoose.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305541047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n const playlistSchema = new Schema({},{timestamps:true})\r\n \r\n-export const Platlist = mongoose.\n\\ No newline at end of file\n+export const Platlist = mongoose.model\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305552583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n const playlistSchema = new Schema({},{timestamps:true})\r\n \r\n-export const Platlist = mongoose.model\n\\ No newline at end of file\n+export const Platlist = mongoose.model(\"Playlist\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305560821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n const playlistSchema = new Schema({},{timestamps:true})\r\n \r\n-export const Platlist = mongoose.model(\"Playlist\")\n\\ No newline at end of file\n+export const Plalist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305568338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n-const playlistSchema = new Schema({},{timestamps:true})\r\n+const playlistSchema = new Schema({\r\n+    \r\n\\ No newline at end of file\n+},{timestamps:true})\r\n \r\n-export const Plalist = mongoose.model(\"Playlist\",playlistSchema)\n+export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305574449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n const playlistSchema = new Schema({\r\n-    \r\n+    name:{\r\n+        ty\r\n+    }\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305580574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n const playlistSchema = new Schema({\r\n     name:{\r\n-        ty\r\n+        type:String\r\n     }\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305595687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import mongoose,{Schema} from \"mongoose\";\\\r\n \r\n const playlistSchema = new Schema({\r\n     name:{\r\n-        type:String\r\n+        type:String,\r\n+        re\r\n     }\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305603053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const playlistSchema = new Schema({\r\n     name:{\r\n         type:String,\r\n-        re\r\n+        required:true\r\n     }\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305608534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n const playlistSchema = new Schema({\r\n     name:{\r\n         type:String,\r\n         required:true\r\n-    }\r\n+    },\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305615864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,11 @@\n     name:{\r\n         type:String,\r\n         required:true\r\n     },\r\n+       name:{\r\n+        type:String,\r\n+        required:true\r\n+    },\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305625778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n        name:{\r\n         type:String,\r\n         required:true\r\n     },\r\n+    \r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305631129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     name:{\r\n         type:String,\r\n         required:true\r\n     },\r\n-       name:{\r\n+       des:{\r\n         type:String,\r\n         required:true\r\n     },\r\n     \r\n"
+                },
+                {
+                    "date": 1778305643974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,12 @@\n     name:{\r\n         type:String,\r\n         required:true\r\n     },\r\n-       des:{\r\n+       description:{\r\n         type:String,\r\n         required:true\r\n     },\r\n-    \r\n+    vedi\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305649137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n        description:{\r\n         type:String,\r\n         required:true\r\n     },\r\n-    vedi\r\n+    vide\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305672131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n        description:{\r\n         type:String,\r\n         required:true\r\n     },\r\n-    vide\r\n+    videos:\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305678425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,10 @@\n        description:{\r\n         type:String,\r\n         required:true\r\n     },\r\n-    videos:\r\n+    videos:[{\r\n+        type\r\n+    }]\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305684131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         type:String,\r\n         required:true\r\n     },\r\n     videos:[{\r\n-        type\r\n+        type:String\r\n     }]\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305690814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,10 @@\n         type:String,\r\n         required:true\r\n     },\r\n     videos:[{\r\n-        type:String\r\n+        type:String,\r\n+        required:\r\n     }]\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305698979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         required:true\r\n     },\r\n     videos:[{\r\n         type:String,\r\n-        required:\r\n+        required:true\r\n     }]\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305716390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n        description:{\r\n         type:String,\r\n         required:true\r\n     },\r\n-    videos:[{\r\n+    videos:[{ \r\n         type:String,\r\n         required:true\r\n     }]\r\n },{timestamps:true})\r\n"
+                },
+                {
+                    "date": 1778305730893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         type:String,\r\n         required:true\r\n     },\r\n     videos:[{ \r\n-        type:String,\r\n+        type:Schema,\r\n         required:true\r\n     }]\r\n },{timestamps:true})\r\n \r\n"
+                },
+                {
+                    "date": 1778305738284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         type:String,\r\n         required:true\r\n     },\r\n     videos:[{ \r\n-        type:Schema,\r\n+        type:Schema.Types.ObjectId,\r\n         required:true\r\n     }]\r\n },{timestamps:true})\r\n \r\n"
+                },
+                {
+                    "date": 1778305743514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         required:true\r\n     },\r\n     videos:[{ \r\n         type:Schema.Types.ObjectId,\r\n+        ref:\"\"\r\n         required:true\r\n     }]\r\n },{timestamps:true})\r\n \r\n"
+                },
+                {
+                    "date": 1778305750101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+import mongoose,{Schema} from \"mongoose\";\\\r\n+\r\n+const playlistSchema = new Schema({\r\n+    name:{\r\n+        type:String,\r\n+        required:true\r\n+    },\r\n+       description:{\r\n+        type:String,\r\n+        required:true\r\n+    },\r\n+    videos:[{ \r\n+        type:Schema.Types.ObjectId,\r\n+        ref:\"Vedio\",\r\n+        required:true\r\n+    }]\r\n+},{timestamps:true})\r\n+\r\n+export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305755648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,29 +10,10 @@\n         required:true\r\n     },\r\n     videos:[{ \r\n         type:Schema.Types.ObjectId,\r\n-        ref:\"Vedio\",\r\n-        required:true\r\n+        ref:\"Vedio\"\r\n+        \r\n     }]\r\n },{timestamps:true})\r\n \r\n-export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n-import mongoose,{Schema} from \"mongoose\";\\\r\n-\r\n-const playlistSchema = new Schema({\r\n-    name:{\r\n-        type:String,\r\n-        required:true\r\n-    },\r\n-       description:{\r\n-        type:String,\r\n-        required:true\r\n-    },\r\n-    videos:[{ \r\n-        type:Schema.Types.ObjectId,\r\n-        ref:\"\"\r\n-        required:true\r\n-    }]\r\n-},{timestamps:true})\r\n-\r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305780765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,8 @@\n     videos:[{ \r\n         type:Schema.Types.ObjectId,\r\n         ref:\"Vedio\"\r\n         \r\n-    }]\r\n+    }] \r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305788275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n     videos:[{ \r\n         type:Schema.Types.ObjectId,\r\n         ref:\"Vedio\"\r\n         \r\n-    }] \r\n+    }] ,\r\n+    \r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305796994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,11 @@\n         type:Schema.Types.ObjectId,\r\n         ref:\"Vedio\"\r\n         \r\n     }] ,\r\n-    \r\n+    owner:{\r\n+        ty\r\n+    }\r\n+\r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305806571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,10 @@\n         ref:\"Vedio\"\r\n         \r\n     }] ,\r\n     owner:{\r\n-        ty\r\n+            type:Schema.Types.ObjectId,\r\n+        \r\n     }\r\n \r\n },{timestamps:true})\r\n \r\n"
+                },
+                {
+                    "date": 1778305812817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,10 @@\n         ref:\"Vedio\"\r\n         \r\n     }] ,\r\n     owner:{\r\n-            type:Schema.Types.ObjectId,\r\n+        type:Schema.Types.ObjectId,\r\n+        ref\r\n         \r\n     }\r\n \r\n },{timestamps:true})\r\n"
+                },
+                {
+                    "date": 1778305821800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,10 @@\n         \r\n     }] ,\r\n     owner:{\r\n         type:Schema.Types.ObjectId,\r\n-        ref\r\n-        \r\n-    }\r\n+        ref:\"User\"\r\n+         }\r\n \r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305828636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     }] ,\r\n     owner:{\r\n         type:Schema.Types.ObjectId,\r\n         ref:\"User\"\r\n-         }\r\n+     }\r\n \r\n },{timestamps:true})\r\n \r\n export const Playlist = mongoose.model(\"Playlist\",playlistSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778306099270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import mongoose,{Schema} from \"mongoose\";\\\r\n+import mongoose,{Schema} from \"mongoose\";\r\n \r\n const playlistSchema = new Schema({\r\n     name:{\r\n         type:String,\r\n"
+                }
+            ],
+            "date": 1778305480350,
+            "name": "Commit-0",
+            "content": "import mongoose,{Schema} from \"mongoose\";"
+        }
+    ]
+}

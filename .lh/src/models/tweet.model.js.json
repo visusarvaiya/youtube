@@ -1,0 +1,98 @@
+{
+    "sourceFile": "src/models/tweet.model.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 20,
+            "patches": [
+                {
+                    "date": 1778305848101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1778305862202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-impoer\n\\ No newline at end of file\n+import mongoosfrom \"mongoose\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305867289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import mongoosfrom \"mongoose\";\n\\ No newline at end of file\n+import mongoose,{from \"mongoose\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305874184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-import mongoose,{from \"mongoose\";\n\\ No newline at end of file\n+import mongoose,{Schema} from \"mongoose\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305881522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-import mongoose,{Schema} from \"mongoose\";\n\\ No newline at end of file\n+import mongoose,{Schema} from \"mongoose\";\r\n+\r\n+const\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305887781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n-const\n\\ No newline at end of file\n+const tweetSchema\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305900356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n-const tweetSchema\n\\ No newline at end of file\n+const tweetSchema = new \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305906310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n-const tweetSchema = new \n\\ No newline at end of file\n+const tweetSchema = new Schema({})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305912591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n-const tweetSchema = new Schema({})\n\\ No newline at end of file\n+const tweetSchema = new Schema({},{time})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305923368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n-const tweetSchema = new Schema({},{time})\n\\ No newline at end of file\n+const tweetSchema = new Schema({},{timestamps:true})\r\n+\r\n"
+                },
+                {
+                    "date": 1778305934827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n const tweetSchema = new Schema({},{timestamps:true})\r\n \r\n+export const tweet\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305942979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n const tweetSchema = new Schema({},{timestamps:true})\r\n \r\n-export const tweet\n\\ No newline at end of file\n+export const tweet = moon\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305949381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n const tweetSchema = new Schema({},{timestamps:true})\r\n \r\n-export const tweet = moon\n\\ No newline at end of file\n+export const tweet = mongoose.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305960097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n const tweetSchema = new Schema({},{timestamps:true})\r\n \r\n-export const tweet = mongoose.\n\\ No newline at end of file\n+export const tweet = mongoose.model(\"Tweet\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305965730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n const tweetSchema = new Schema({},{timestamps:true})\r\n \r\n-export const tweet = mongoose.model(\"Tweet\")\n\\ No newline at end of file\n+export const Tweet = mongoose.model(\"Tweet\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305971850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n const tweetSchema = new Schema({},{timestamps:true})\r\n \r\n-export const Tweet = mongoose.model(\"Tweet\")\n\\ No newline at end of file\n+export const Tweet = mongoose.model(\"Tweet\",tweetSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778305992585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n-const tweetSchema = new Schema({},{timestamps:true})\r\n+const tweetSchema = new Schema({\r\n+    conte\r\n+},{timestamps:true})\r\n \r\n export const Tweet = mongoose.model(\"Tweet\",tweetSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778306002169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n const tweetSchema = new Schema({\r\n-    conte\r\n+    content:{\r\n+        type:string\r\n+    }\r\n },{timestamps:true})\r\n \r\n export const Tweet = mongoose.model(\"Tweet\",tweetSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778306008155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import mongoose,{Schema} from \"mongoose\";\r\n \r\n const tweetSchema = new Schema({\r\n     content:{\r\n-        type:string\r\n+        type:String,\r\n+        require\r\n     }\r\n },{timestamps:true})\r\n \r\n export const Tweet = mongoose.model(\"Tweet\",tweetSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778306021703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n \r\n const tweetSchema = new Schema({\r\n     content:{\r\n         type:String,\r\n-        require\r\n-    }\r\n+        required:true\r\n+    },\r\n+    owner\r\n },{timestamps:true})\r\n \r\n export const Tweet = mongoose.model(\"Tweet\",tweetSchema)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1778306027172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         type:String,\r\n         required:true\r\n     },\r\n     owner:{\r\n-        Schema.\r\n+        Schema.t\r\n     }\r\n },{timestamps:true})\r\n \r\n export const Tweet = mongoose.model(\"Tweet\",tweetSchema)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1778305848101,
+            "name": "Commit-0",
+            "content": "impoer"
+        }
+    ]
+}
