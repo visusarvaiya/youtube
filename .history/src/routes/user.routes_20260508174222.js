@@ -9,10 +9,10 @@ import {
     updateaccountdetails, 
     updateuseravatar, 
     updatecoverimage, 
-    getuserchannelprofile, 
-    getwatchhistory } from "../controllers/user.controllers.js";
+    getuserchannelprofile, getwatchhistory } from "../controllers/user.controllers.js";
 import {upload} from "../middlewares/multer.middleware.js"
 import { verifyJWT } from "../middlewares/auth.middleware.js";
+import { verify } from "jsonwebtoken";
 
 
 const router = Router()
@@ -45,7 +45,7 @@ router.route("/update-account").patch(verifyJWT,updateaccountdetails)
 
 router.route("/avatar").patch(verifyJWT,upload.single("avatar"),updateuseravatar)
 
-router.route("/cover-image").patch(verifyJWT,upload.single("coverimage"),updatecoverimage)
+router.route("/cover-image").patch(verifyJWT,upload.single("/coverimage"),updatecoverimage)
 
 router.route("/c/:username").get(verifyJWT,getuserchannelprofile)
 
