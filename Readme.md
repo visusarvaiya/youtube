@@ -50,23 +50,26 @@ Cloudinary account
 
 
 📁 Project Structure
+
 Axoryn/
-├── backend/                    # Node.js/Express API
+├── backend/                     # Node.js/Express API
 │   ├── src/
-│   │   ├── controllers/       # Route handlers
-│   │   ├── models/           # MongoDB schemas
-│   │   ├── routes/           # API endpoints
-│   │   ├── middlewares/      # Auth & validation
-│   │   └── utils/            # Helper functions
-│   └── public/               # Static files
-├── frontend/                  # React application
+│   │   ├── controllers/         # Route handlers
+│   │   ├── models/              # MongoDB schemas
+│   │   ├── routes/              # API endpoints
+│   │   ├── middlewares/         # Authentication & validation
+│   │   └── utils/               # Helper functions
+│   └── public/                  # Static files
+│
+├── frontend/                    # React application
 │   ├── src/
-│   │   ├── components/       # Reusable UI components
-│   │   ├── pages/           # Route components
-│   │   ├── services/        # API integration
-│   │   └── utils/           # Helper functions
-│   └── public/              # Static assets
-└── package.json             # Root package configuration
+│   │   ├── components/          # Reusable UI components
+│   │   ├── pages/               # Page components
+│   │   ├── services/            # API integration
+│   │   └── utils/               # Helper functions
+│   └── public/                  # Static assets
+│
+└── package.json                 # Root package configuration
 
 
 🎯 Core API Endpoints
