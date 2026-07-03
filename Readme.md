@@ -1,93 +1,153 @@
-A Full-Stack YouTube-Inspired Video Sharing Platform
+# 🎥 Axoryn
 
-Axoryn is a modern, feature-rich multimedia platform that brings the core functionality of YouTube to life with a clean, responsive interface and robust backend architecture. Built with the MERN stack, it offers seamless video streaming, user engagement features, and comprehensive content management.
+### A Full-Stack YouTube-Inspired Video Sharing Platform
 
-LIVE - https://youtube-clone-2w4ia679f-vishvas-projects-933c6f3e.vercel.app
+Axoryn is a full-stack video sharing platform built with the **MERN Stack**. It allows users to upload, stream, and manage videos while interacting through likes, comments, subscriptions, playlists, and creator dashboards. The platform features secure authentication, responsive UI, cloud media storage, and a scalable backend architecture.
 
-✨ Key Features
-🎬 Video Management
-Upload & Stream - High-quality video hosting with Cloudinary integration
-Advanced Metadata - Thumbnails, descriptions, duration tracking, and view analytics
-Publishing Controls - Draft and publish system for content creators
-👥 User Experience
-Authentication System - Secure JWT-based login with refresh tokens
-User Profiles - Customizable avatars, cover images, and channel management
-Watch History - Persistent viewing history across sessions
-🚀 Social Features
-Engagement System - Like/dislike functionality across videos and tweets
-Comments - Threaded commenting system for community interaction
-Subscriptions - Follow your favorite creators and get updates
-Playlists - Organize and curate video collections
-📱 Modern Frontend
-Responsive Design - Tailwind CSS for mobile-first, beautiful interfaces
-State Management - Redux Toolkit for efficient data flow
-Real-time Updates - Hot toast notifications and loading states
-Interactive Components - Custom video players and engagement widgets
-📊 Creator Tools
-Dashboard Analytics - View statistics and engagement metrics
-Content Management - Easy video upload, edit, and organization
-Community Features - Twitter-like posts and audience interaction
-🛠️ Tech Stack
-Frontend:
+## 🌐 Live Demo
 
-React 19 with Vite
-Redux Toolkit for state management
-React Router for navigation
-Tailwind CSS for styling
-Axios for API communication
-Backend:
+🔗 https://youtube-clone-2w4ia679f-vishvas-projects-933c6f3e.vercel.app
 
-Node.js with Express.js
-MongoDB with Mongoose ODM
-JWT authentication with bcrypt
-Cloudinary for media storage
-Multer for file uploads
-🚀 Quick Start
-Prerequisites
-Node.js (v16+)
-MongoDB
-Cloudinary account
+---
 
+# ✨ Features
 
-📁 Project Structure
+## 🎬 Video Management
 
+- Upload and stream videos
+- Cloudinary media storage
+- Custom thumbnails and descriptions
+- View count and duration tracking
+- Publish and draft support
+
+## 👤 User Features
+
+- JWT Authentication
+- Refresh Token Authentication
+- User Profiles
+- Avatar & Cover Image Upload
+- Watch History
+
+## ❤️ Social Features
+
+- Like & Unlike Videos
+- Like Tweets
+- Comments System
+- Subscribe to Channels
+- Playlists Management
+
+## 📊 Creator Dashboard
+
+- Upload Videos
+- Manage Content
+- Dashboard Analytics
+- Community Posts (Tweets)
+
+## 💻 Modern Frontend
+
+- Responsive Design
+- Redux Toolkit State Management
+- React Router
+- Tailwind CSS
+- Toast Notifications
+- Custom Video Player
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React 19
+- Vite
+- Redux Toolkit
+- React Router
+- Tailwind CSS
+- Axios
+
+## Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- bcrypt
+- Multer
+- Cloudinary
+
+---
+
+# 📁 Project Structure
+
+```text
 Axoryn/
-├── backend/                     # Node.js/Express API
+├── backend/
 │   ├── src/
-│   │   ├── controllers/         # Route handlers
-│   │   ├── models/              # MongoDB schemas
-│   │   ├── routes/              # API endpoints
-│   │   ├── middlewares/         # Authentication & validation
-│   │   └── utils/               # Helper functions
-│   └── public/                  # Static files
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── middlewares/
+│   │   └── utils/
+│   └── public/
 │
-├── frontend/                    # React application
+├── frontend/
 │   ├── src/
-│   │   ├── components/          # Reusable UI components
-│   │   ├── pages/               # Page components
-│   │   ├── services/            # API integration
-│   │   └── utils/               # Helper functions
-│   └── public/                  # Static assets
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── utils/
+│   └── public/
 │
-└── package.json                 # Root package configuration
+└── package.json
+```
 
+---
 
-🎯 Core API Endpoints
-Authentication: /api/v1/users - Registration, login, profile management
-Videos: /api/v1/videos - Upload, stream, metadata management
-Social: /api/v1/comments, /api/v1/likes - User interactions
-Content: /api/v1/playlists, /api/v1/tweets - Content organization
-Analytics: /api/v1/dashboard - Creator insights
+# 🚀 REST API
 
-🌟 What Makes Axoryn Special
-Production-Ready Architecture - Scalable backend with proper error handling
-Modern UI/UX - Intuitive design inspired by the best video platforms
-Comprehensive Features - Not just video sharing, but a complete social platform
-Developer-Friendly - Clean code structure with clear separation of concerns
-Cloud-Integrated - Leverages Cloudinary for optimal media delivery
+| Endpoint | Description |
+|----------|-------------|
+| `/api/v1/users` | Authentication & User Management |
+| `/api/v1/videos` | Upload & Manage Videos |
+| `/api/v1/comments` | Comments |
+| `/api/v1/likes` | Likes |
+| `/api/v1/playlists` | Playlists |
+| `/api/v1/subscriptions` | Channel Subscriptions |
+| `/api/v1/dashboard` | Creator Dashboard |
+| `/api/v1/tweets` | Community Posts |
 
-🔗 Links
-Repository: GitHub
-Issues: Bug Reports
-Author: Yash Varma
-Built with ❤️ as part of the Chai and Code - Hitesh Chaudhary Sir learning journey
+---
+
+# ⭐ Highlights
+
+- Full MERN Stack Application
+- Secure JWT Authentication
+- Cloudinary Image & Video Storage
+- Responsive UI with Tailwind CSS
+- Redux Toolkit State Management
+- RESTful APIs
+- Modular & Scalable Backend Architecture
+- Creator Dashboard
+- Social Features
+- Production-Ready Project Structure
+
+---
+
+# 🔗 Links
+
+### Live Demo
+
+https://youtube-clone-2w4ia679f-vishvas-projects-933c6f3e.vercel.app
+
+### GitHub Repository
+
+https://github.com/Yash2204V/Axoryn
+
+### Author
+
+**Yash Varma**
+
+---
+
+Built with ❤️ using the MERN Stack as part of the Chai aur Code (Hitesh Chaudhary) learning journey.
