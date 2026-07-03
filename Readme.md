@@ -47,6 +47,8 @@ Prerequisites
 Node.js (v16+)
 MongoDB
 Cloudinary account
+
+
 📁 Project Structure
 Axoryn/
 ├── backend/                    # Node.js/Express API
@@ -65,18 +67,22 @@ Axoryn/
 │   │   └── utils/           # Helper functions
 │   └── public/              # Static assets
 └── package.json             # Root package configuration
+
+
 🎯 Core API Endpoints
 Authentication: /api/v1/users - Registration, login, profile management
 Videos: /api/v1/videos - Upload, stream, metadata management
 Social: /api/v1/comments, /api/v1/likes - User interactions
 Content: /api/v1/playlists, /api/v1/tweets - Content organization
 Analytics: /api/v1/dashboard - Creator insights
+
 🌟 What Makes Axoryn Special
 Production-Ready Architecture - Scalable backend with proper error handling
 Modern UI/UX - Intuitive design inspired by the best video platforms
 Comprehensive Features - Not just video sharing, but a complete social platform
 Developer-Friendly - Clean code structure with clear separation of concerns
 Cloud-Integrated - Leverages Cloudinary for optimal media delivery
+
 🔗 Links
 Repository: GitHub
 Issues: Bug Reports
